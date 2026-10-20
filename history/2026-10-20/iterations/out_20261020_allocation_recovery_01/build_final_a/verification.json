@@ -1,0 +1,30 @@
+[
+  {
+    "file": "פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+    "sha256": "41365ccdce724f04930d0df1144a961f336f59e82bb2ca18310417044e8d85f7",
+    "changed_section": "סדר העבודה ותנאי המשך",
+    "all_other_sections_unchanged": true
+  },
+  {
+    "file": "GetAllocationPolicy V2.xlsx",
+    "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9",
+    "changed_cells": [],
+    "sheet_count": 60,
+    "byte_identical_to_source": true
+  },
+  {
+    "file": "WebSearch (1) V2.xlsx",
+    "sha256": "12bf49d6d0c7bb71218beae77e98327cc7799a35c5ff40b6ddac74c8c28cf8c9",
+    "changed_cells": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ],
+    "sheet_count": 60,
+    "changed_package_parts": [
+      "xl/sharedStrings.xml"
+    ],
+    "non_target_cells_and_properties_unchanged": true
+  }
+]

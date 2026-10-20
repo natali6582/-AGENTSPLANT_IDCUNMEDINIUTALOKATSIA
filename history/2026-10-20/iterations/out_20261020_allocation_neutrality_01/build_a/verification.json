@@ -1,0 +1,27 @@
+[
+  {
+    "approved_text_occurrences": 1,
+    "budget_recovery_verification_calculation_sections_byte_unchanged": true,
+    "encoding_and_line_endings_preserved": true,
+    "file": "פרומפט עדכון 12_57 20_10.txt",
+    "only_approved_text_inserted": true,
+    "sha256": "e30b0b4cb1588b728fe8fef3a9e39861db211634e81c00f60f68e367ee3bf35d"
+  },
+  {
+    "approved_text_occurrences": 1,
+    "changed_cells": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ],
+    "changed_package_parts": [
+      "xl/sharedStrings.xml"
+    ],
+    "file": "WebSearch (1) V2.xlsx",
+    "non_target_cells_and_properties_unchanged": true,
+    "only_approved_text_inserted": true,
+    "sha256": "6873800408417abf8b4cf9b4e9620a717942bff480ca3c63c3a554fce5388a12",
+    "sheet_count": 60
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "backup": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\ישן\\גיבוי_20261020_מיפוי_מזומן_GetAllocationPolicy_V2_01",
+  "changed_cells": [
+    [
+      "מידע כללי",
+      "F2"
+    ],
+    [
+      "תוספות לתיאור הכלים",
+      "I12"
+    ]
+  ],
+  "imported_into_live_system": false,
+  "live_agent_tested": false,
+  "original_general_additions_preserved": true,
+  "protected_files_unchanged": 9,
+  "repeat_builds_byte_identical": true,
+  "saved": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\GetAllocationPolicy V2.xlsx",
+  "sha256": "b33b00c061ac77f4c6ce3685905cefe586862e5c43cb2f0f655aeff6d70e5af5",
+  "sheet_count": 60,
+  "visual_preview": "Existing import-format Artifact Tool limitation; package preservation verified"
+}

@@ -1,0 +1,538 @@
+001: ראש הטופס
+002: עדכון מדיניות וחשיפות
+003: תחתית הטופס
+004: Key details
+005: Sprint
+006: Add sprint
+007: Components
+008: מסך לקוח
+009: Priority
+010: Medium
+011: Developer
+012: None
+013: Original estimate
+014: Add estimate
+015: Start date
+016: Add date
+017: Due date
+018: Add due date
+019: Description
+020: ראש הטופס
+021: היי,
+022: בהמשך לפגישה עם עידן, מעלה כאן את כל הנקודות והדברים שיש ליישם:
+023: המדיניות והחשיפות ייקבעו על סמך המלצת AI כברירת מחדל . 
+024: נגיש עבור מנהלי משרד/ יוזר סוליסט
+025: רמת משתמש - כאן כמו שדיברנו, במידה ומשתמש נמצא תחת משרד, אך החליט לשנות את ההגדרה תבוא לידי ביטוי ביוזר שלו בלבד.
+026: יש לאפשר, בכל רגע נתון בלחיצת כפתור, לחזור להגדרות ברמת המשרד בו הוא נמצא תחתיו
+027: ההגדרות הנ”ל הן רק דרך המסכים הראשיים - הגדרות משרד/ משתמש
+028: במסך ניתוח חשיפות לקוח - יש להוסיף הפניה למסכי העדכו
+029: במסך ההגדרות יופיעו רשימת הלקוחות בהן הוגדרה אלוקציה אישית
+030: קביעת אלוקציה אישית עבור לקוח ספציפי:
+031: תתבצע מהלקוח, במסך אלוקציה וחשיפות באמעות כפתור 
+032: יש להסיר את השורה: באפשרותך לערוך….
+033:  
+034: דיאלוג המסך:
+035: המסך יכיל את כל רמות הסיכון, והשורה בה נמצא הלקוח תודגש.
+036: הוספת דיסקליימר למסך:
+037: "בחלונית זו מוצגת המידניות החלה כעת על כלל הלקוחות, ככל ותבצע בחלונית זו שינוי היא תחול על הלקוח הספציפי בלבד."
+038: תינתן אינדיקציה מה ערך את השינויים ומתי
+039: בתיקייה ישנו אפיון כולל מוקאפים לתצוגה בתוך מסך הלקוח, מבחינת ההגדרה/ וסימון.
+040: Z:\מדיניות האלוקצייה
+041: תחת 
+042: תחתית הטופס
+043: Subtasks
+044: Add subtask
+045: Linked work items
+046: Add linked work item
+047: Confluence content
+048: Project plan
+049: Request to try
+050: Agents
+051: Uses AI. Verify results.
+052: Start work
+053: Activity
+054: All
+055: Comments
+056: History
+057: Work log
+058: 
+059: Add a comment…
+060: Suggest a reply...Status update...Thanks...
+061: Pro tip: press M to comment
+062: 
+063: Ariel PlanT
+064: September 2, 2026 at 12:46 PM
+065: @Tomer Zarfati 
+066: היי תומר,
+067: במסגרת התיקונים למסך אלוקציה וחשיפות הייתי צריך לגעת בנושא של השאלון החדש מול הישן בכמה מקומות שמצאתי, כדי שלא יוצגו שמות לא נכונים. אשמח CodeReview  על הקומיטים האלו שנמצאים בDEV:
+068: 2d1411a5f PLAN-854# מאוזן במקום ניטרלי
+069: 71d66fc29 PLAN-854# מיפוי רמות סיכון ישנות
+070: 53fd49996 PLAN-854# הסבת לקוח ישן בעדכון ידני
+071: e07a92413 PLAN-854# תיקון ערבוב שמות באקסל
+072: 9698de029 PLAN-854# הסבה גם בפרטים אישיים
+073:  
+074: בעבר ביקשו מאיתנו לשנות ממאוזן לניטרלי (זה היה תחת  IsPlannerVersion ) - ועכשיו ביקשו להחזיר ממאוזן לניטרלי זה גורף בכל המערכת. שימי לב לעניין @Mor Refael , יש פה שינוי גורף במונחים אז כדאי שתדעי מזה.
+075:  
+076: מכיוון שבשאלון סיכון הישן היו 9 אפשרויות,
+077: ובשאלון החדש זה 5, נוספה פונקציה חדשה של מיפוי מהישנים לחדשים:
+078:  MapOldRiskLevelToNew + GetRiskLevelDisplayNameByCalculationType המערכת שומרת כבר איזה שאלון מדובר, כך שאפשר לדעת מתי לבצע את המיפוי ומתי לא.
+079:  
+080: לקוח שמילא שאלון ישן והסוכן עדכן לו ידנית רמה (מהרשימה החדשה RiskLevelTypeManual) — עד היום לא היה נשמר ה RiskCalculationType- טופל. ובנוסף תוצאת השאלון מתורגמת לרמה המקבילה (RiskLevelType), הציון (RiskLevelScore ) של השאלון נשאר . וזה בסדר כי בטבלת    CustomerSekerAnswers  אנחנו יודעים על איזה שאלון הוא ענה.
+081: זה טופל בשני מסלולי השמירה היחידים של השדה — דיאלוג עריכת הלקוח (Customer/UpdateItem) ומסך פרטים אישיים (CustomerPersons/UpdatePersonsData).
+082:  
+083: בדוח של דה סרוויס לערן בלבד ובדוח בלילה נראלי שהיה ערבוב טבלאות שמות: לקוח שאלון חדש הוצג עם שמות ישנים (כך שהיה יכול להיות מצב ש"שמרני" יוצג כ"חרד להפסד"), ובעמודת "בפועל" רמה שחושבה בסולם החדש קיבלה שם מהטבלה הישנה (30% ⇒ "שמרן" במקום "מאוזן"). תוקן, לא יודע אם הדוח בשימוש, אשמח שתעיף מבט שאין לוגיקה שאני מפספס.
+084:  
+085: לסיכום, התרחישים:
+086: לקוח שממלא את השאלון החדש — נשמר בסולם החדש עם החותמת הנכונה (כמו תמיד).
+087: לקוח ישן — מוצג עם השמות החדשים דרך המיפוי.
+088: לקוח ישן שהסוכן עדכן ידנית — הכרטיס מוסב לעולם החדש (משני המסכים).
+089: הדוח — יושר.
+090: וידאתי ב-DB שאין לקוחות עם קודים ישנים (6-9) בלי חותמת — 0 שורות, אז אין קצה פתוח.
+091: 
+092: Natali Koifman
+093: August 20, 2026 at 2:01 PM
+094: (edited)
+095: טופל, מחזיר תשובות. ממשיכה בבדיקות ושיפורים
+096: 
+097: Ariel PlanT
+098: August 19, 2026 at 4:49 PM
+099: PLAN-854 — תיקוני QA (ממצאי בדיקה 19.8) למדיניות אלוקציה וחשיפות
+100: Context
+101: Context GUID: {a7c3f9d2-5e81-4b6f-9a24-8c07d1e5b3f6} - תיקוני QA למדיניות אלוקציה
+102: טיקט: PLAN-854. אחרי עליית הגרסה לטסטנט (17/08), Lihi Lotan ביצעה בדיקות (19/08) והחזירה שני תיקונים בתגובה + חמישה "ממצאי בדיקה — לפיתוח" במוקאפ Z:\\מדיניות האלוקצייה\\mockup-client-allocation-override.html (הדגמות ב-mockup-allocation-policy-v2.html).
+103: הכרעות אריאל (19/08):
+104: קליק ישיר על הקובייה + אייקון "חוץ החוצה" — כן וכן.
+105: ממצא 7 (הנגשת עריכה): לא משכבת ההנגשה של המוקאפ — לבטל את שער העריכה: תמיד ניתן "לשחק" עם הסליידרים, העיצוב נשאר כהיום, "אישור" מופיע רק אם משהו זז.
+106: שמות רמות הסיכון (ממצא 5): "ניטרלי"→"מאוזן" — בירור מול המוצר קודם; מיפוי היסטורי + באגי האקסל — לדיון נפרד. מחוץ לתוכנית הזו (נספח לדיון בסוף).
+107: Branch: PLAN-854#עדכון-מדיניות-וחשיפות (ממשיכים על הקיים).
+108: דגל ShowNewAllocationPolicy (Web.config) — הכל נשאר מתחתיו: פאזה 1 — ה-title החדש וה-headernavigateurl נקבעים רק בענף דגל-דלוק (והמנגנון בתבנית/JS הוא opt-in טהור); פאזה 2 — התגית ב-AnalyseAllocation2 מרונדרת רק בדגל דלוק (ViewBag משלב 1), והנוסח בעמוד החדש שנקודות הכניסה אליו מגודרות; פאזות 3-4 — בתוך העמוד החדש + EP שרק הוא קורא. דגל כבוי = המערכת זהה להיום בכל הפאזות.
+109: 
+110: פאזה 1 — כניסה ישירה מהקוביות + שינוי שם + אייקון (+ תיקון באג Layout3)
+111: הקוביות בהעדפות הן כרטיסי nd2 sidebar-navigation (לא אקורדיונים): ההדר נבנה בתבנית nd2TemplateSidebarNavigationButtons (Nd2TemplatesView.cshtml:1944-1965 — <h5 class="card-title">{{title}}</h5> ב-1957), קליק מטופל ב-delegated handler ב-nd2-sidebar-navigation-area.js:50-55 (ShowTab) + מקבילת מקלדת (:58-96). אין דפוס קיים של קוביית-ניווט — מוסיפים אופציה opt-in:
+112: אופציה חדשה על אובייקט הקובייה: headernavigateurl — נפלטת כ-data-navigate-url על .nd2-js-sidebar-navigation-button בתבנית + אייקון bi-box-arrow-up-left inline בתוך ה-h5 (הכרטיס מוגבל 63px), שניהם מאחורי {{#if headernavigateurl}}. ‏Nd2TemplatesView.cshtml הוא cp1255 — עריכה דרך PowerShell עם Encoding 1255.
+113: nd2-sidebar-navigation-area.js: ענף בתחילת ה-click handler והמקלדת — יש data-navigate-url ⇒ window.open(url, '_blank') ו-return (בלי ShowTab). ‏opt-in טהור — אפס השפעה על צרכני התבנית האחרים (ImportNew3 וכו').
+114: IndexPreferences.cshtml:170 (פרטי משתמש): בדגל דלוק — title: "הגדרת מדיניות אלוקציה וחשיפות" + headernavigateurl ל-/CustomerRiskLevel/AllocationPolicy?intConnectionType=3 (יוזר). דגל כבוי — הקובייה כהיום (טופס מוטמע ישן).
+115: IndexOfficePreferences.cshtml:391 (פרטי משרד): אותו דבר עם intConnectionType=2 (משרד; הקובייה ממילא נדחפת רק בדגל דלוק, :403-405).
+116: ה-pane הפנימי (עם הכפתור הישן) נשאר — משרת deep-link ?section=AllocationAndHasifotPolicy ישן (מופע יחיד, בענף דגל-כבוי של UserDashboard4).
+117: תיקון באג: EditUserDetailsLayout3.cshtml:1314 — בדגל דלוק מנווט window.location.href='/CustomerRiskLevel/AllocationPolicy' בלי intConnectionType ⇒ מאז שלב 2 (סקופים מפורשים) זה עמוד שגיאה. יישור לאח ב-EditUserDetails.cshtml:1135: ‏window.open + ‏intConnectionType=2. (הקוד המת ב-Layout3:1265-1267 — לא נוגעים; מוצף בלבד.)
+118: Commit מוצע: PLAN-854#כניסה ישירה למדיניות אלוקציה
+119: פאזה 2 — עיצוב התגית + נוסח מדיניות המשרד
+120: תגית "אלוקציה מותאמת אישית" — AnalyseAllocation2.cshtml:62: החלפת #eec96a/#9a6b12 (כתום בהיר + טקסט כהה) ברקע כתום מלא #c4641f + גופן לבן, ללא מסגרת — כמו יתר התגיות במסך (דרישת המוקאפ המפורשת).
+121: נוסח מדיניות המשרד — AllocationPolicy.cshtml:63 (מופע יחיד, hardcoded): החלפה בנוסח החדש כלשונו: "מדיניות ברירת המחדל של המשרד — חלה על כלל המשתמשים והלקוחות, אלא אם הוגדרה למשתמש או ללקוח מדיניות מותאמת אישית."
+122: Commit מוצע: PLAN-854#עיצוב תגית ונוסח מדיניות
+123: פאזה 3 — אינדיקציית לקוחות מותאמים במסך המדיניות
+124: היום קיים רק בסקופ יוזר כקישור שקט + ViewBag מונה (Controller:75, view:73-76). הדרישה מהמוקאפ: תגית מונה בולטת (באותה שפה עיצובית כתומה), גם ברמת משרד, + תזכורת בשמירה.
+125: BL חדש — CustomerRiskLevelBL.GetOfficeCustomersWithAssignedRiskLevel(objDB, strOfficeID): במראה של GetUserCustomersWithAssignedRiskLevel (CustomerRiskLevelBL.cs:2904) — מזהי לקוחות עם שורות Type=4 חיות מהמטמון ⇒ לקוחות חיים שהמנהל הראשי שלהם שייך למשרד (UserManager.OfficeID == strOfficeID — עקבי עם GetCustomerManagerOfficeID ושרשרת ה-fallback של המדיניות).
+126: EP חדש — JSONGetOfficeCustomersWithAllocationOverride (GET, בלי פרמטרים): גידור ValidateOfficeAdminForAllocationPolicy + המשרד של המחובר נקבע בשרת. רישום ב-Authentication.GetUserActionsAllowed() (הלקח החוזר!).
+127: Controller — בסקופ משרד: ViewBag.intCustomersWithOverrideCount מהרשימה המשרדית (כמו שנעשה ליוזר ב-:75).
+128: View — שדרוג הקישור השקט לתגית מונה כתומה (רקע #c4641f, גופן לבן — עיצוב פאזה 2) בשורת ה-scope-note, בסקופ יוזר וגם משרד; קליק ⇒ מודאל הלקוחות הקיים (AllocPolicyOpenCustomersModal, :513) — בסקופ משרד ניזון מה-EP המשרדי (פרמטריזציה של ה-URL בפונקציה).
+129: תזכורת בשמירה — ב-done של AllocPolicySave (בין ה-toast ב-:699 ל-trigger ב-:701): כשהסקופ משרד/יוזר והמונה>0 — toast נוסף: "השינויים לא יחולו על X לקוחות עם אלוקציה מותאמת אישית". (אישור AI ממילא עובר דרך אותו מסלול שמירה ⇒ מכוסה.)
+130: CSS: nd3-allocation-policy.css — מחלקת תגית המונה.
+131: Commit מוצע: PLAN-854#אינדיקציית לקוחות מותאמים
+132: פאזה 4 — עריכה חופשית (ביטול שער העריכה)
+133: הכרעת אריאל: במקום שכבת ההנגשה מהמוקאפ — מבטלים את הצורך ללחוץ "עדכון": הסליידרים תמיד חיים, העיצוב נשאר, וכפתורי הפעולה מופיעים רק כשמשהו זז. מנגנון ה-dirty/baseline הקיים נשאר כמות שהוא.
+134: AllocationPolicy.cshtml — AllocPolicyOrganizeData (:338) יחזיר blnEditMode: true ⇒ הקומפוננטות נבנות פעילות (blnEnabled: blnEditMode ב-:429/:442 — ללא שינוי בקומפוננטות עצמן).
+135: כפתורי הכותרת (AllocPolicyRefreshHeaderButtons, :380) — לוגיקה חדשה: אין dirty ⇒ שני הכפתורים מוסתרים; יש dirty ⇒ מוצגים "ביטול שינויים" (מחובר ל-AllocPolicyCancelChanges הקיים — שחזור baseline) + "אישור" פעיל. הטוגל "עדכון"⇄"ביטול" מתבטל.
+136: AI apply (AllocPolicyAiApply, :1019) — הקריאה ל-AllocPolicySetEditMode(true) מיותרת (תמיד עריכה) — נשארת רק AllocPolicyRefreshDirty(); ה-toast "לחצו אישור לשמירה" נשאר.
+137: AllocPolicySetEditMode / ה-wiring של כפתור העדכון (:1065-1072) — מתעדכנים בהתאם (הסרה/פישוט; בלי להשאיר קוד מת).
+138: חל אוטומטית על כל הסקופים כולל לקוח (אותו מסך). אין שינוי שרת — הוולידציות וההרשאות ב-UpdateRiskLevelDetails ממילא בשרת.
+139: Commit מוצע: PLAN-854#עריכה חופשית במדיניות
+140: 
+141: קבצים
+142: קובץ
+143: פאזה
+144: שינוי
+145: קידוד
+146: Views/Scripts/Nd2TemplatesView.cshtml 
+147: 1 
+148: ‏data-navigate-url + אייקון בתבנית הכפתורים 
+149: cp1255 — PowerShell! 
+150: Design/Nd2_2024/nd2-sidebar-navigation-area.js 
+151: 1 
+152: ענף ניווט ב-click+keyboard 
+153: UTF-8 
+154: Views/Preferences/IndexPreferences.cshtml 
+155: 1 
+156: ‏title+headernavigateurl בדגל דלוק 
+157: ANSI 
+158: Views/Preferences/IndexOfficePreferences.cshtml 
+159: 1 
+160: ‏title+headernavigateurl 
+161: ANSI 
+162: Views/Users/EditUserDetailsLayout3.cshtml 
+163: 1 
+164: תיקון ניווט :1314 
+165: ANSI 
+166: Views/SumDivision/AnalyseAllocation2.cshtml 
+167: 2 
+168: ‏CSS תגית 
+169: ANSI 
+170: Views/CustomerRiskLevel/AllocationPolicy.cshtml 
+171: 2,3,4 
+172: נוסח; תגית מונה+תזכורת; עריכה חופשית 
+173: UTF-8-BOM, C# 5 
+174: ModelsBL/CustomerRiskLevelBL.cs 
+175: 3 
+176: ‏BL רשימה משרדית 
+177: UTF-8 
+178: Controllers/CustomerRiskLevelController.cs 
+179: 3 
+180: ‏EP משרדי + ‏ViewBag מונה 
+181: UTF-8 
+182: Common/Authentication.cs 
+183: 3 
+184: רישום ה-action החדש 
+185: UTF-8 
+186: Design/Nd3_2026/nd3-allocation-policy.css 
+187: 3 
+188: תגית המונה 
+189: UTF-8 
+190: עצירה לסקירה אחרי כל פאזה; אריאל מקמט בעצמו.
+191: אימות
+192: ‏Rebuild ב-VS (לא CLI) + ‏hard-reload (JS מטומן ~16 שעות — DevTools Disable cache).
+193: פאזה 1: פרטי משרד + פרטי משתמש (דגל דלוק) — הקובייה "הגדרת מדיניות אלוקציה וחשיפות" עם אייקון; קליק אחד פותח את המסך בטאב חדש בסקופ הנכון (משרד=2/יוזר=3); שאר הקוביות נפתחות כרגיל; דגל כבוי — הכל כהיום. עריכת משתמש (Layout3) — הכפתור מנווט בלי שגיאה. לבדוק גם עם יועץ רגיל ומנהל-משרד לא-אדמין.
+194: פאזה 2: מסך אלוקציה וחשיפות של לקוח מותאם — התגית כתומה מלאה עם טקסט לבן; עמוד המדיניות בסקופ משרד — הנוסח החדש.
+195: פאזה 3: מנהל משרד בסקופ משרד — תגית מונה עם לקוחות מותאמים של כל המשרד; קליק ⇒ רשימה ⇒ ניווט ללקוח; יועץ רגיל בסקופ יוזר — התגית שלו (הלקוחות שלו); שמירה כשיש מותאמים ⇒ toast התזכורת; ‏EP המשרדי כיועץ רגיל ⇒ שגיאת הרשאה.
+196: פאזה 4: פתיחת העמוד — סליידרים חיים מיד, בלי כפתורים בכותרת; גרירה ⇒ מופיעים "ביטול שינויים"+"אישור"; ביטול ⇒ חזרה ל-baseline והכפתורים נעלמים; שמירה ⇒ נשמר ("אישור" נעלם עד השינוי הבא); זרימת AI ⇒ apply ממלא טיוטה והכפתורים מופיעים.
+197: מחוץ לתוכנית — נושא שמות רמות הסיכון (לדיון + בירור מוצר)
+198: ממצאי הסריקה מתועדים כאן להמשך; לא מבוצעים בתוכנית הזו:
+199: "ניטרלי" במקום "מאוזן" (פרופיל 3, כל המערכת): ‏FeaturesBL.IsPlannerVersion תקוע return true ⇒ ‏GetRiskLevelDisplayNameNewDefault (CustomerRiskLevelBL.cs:420) מחזיר "ניטרלי". תיקון נקודתי אפשרי בשורה 420 — ממתין לבירור אריאל מול המוצר (משנה את כל הווריאנטים).
+200: קודים ישנים דרך טבלת שמות חדשה: ‏Customer.RiskLevelTypeDisplayName (‏Models/Customer.cs:245,250) לא בודק ‏RiskCalculationType; לקוחות מהשאלון הישן (קודים 1-9) מציגים "? - 8" (קודים 6-9) או שם שגוי בשקט (1-5). מיפוי מוצע דרך אחוזי הסיכון — לדיון.
+201: באגי אקסל "התאמת פרופיל סיכון" (הדוח הלילי + דוח יזום): ערבוב ישן/חדש ב-‏CustomerRiskLevelBL.cs:1921,1932 — לדיון.
+202: עקביות משנית (Tsuaa עוקף לוקליזציה; בדיקת ערכי ‏RiskLevelTypeNew_* ב-DB הלוקליזציה) — יחד עם הדיון.
+203: 
+204: Ariel PlanT
+205: August 17, 2026 at 11:49 AM
+206: @Lihi Lotan 
+207: עלתה גרסה חדשה לטסטנט עם המסכים החדשים של מדיניות אלוקציה
+208: לבדיקתך
+209: הפרומפט המקורי לא ממש מביא תוצאות
+210: יש ל @Natali Koifman 
+211: טיקט פתוח לתיקון הפרומפט:
+212: AI-38: אלוקציה וחשיפות - פרומפטDone 
+213: מחזיר אלייך את הטיקט @Lihi Lotan לצורך בדיקות והערות
+214: 
+215: Show more replies
+216: 
+217: Lihi Lotan
+218: August 19, 2026 at 2:23 PM
+219: @Ariel PlanT היי אריאל,
+220: בוצעו בדיקות.
+221: 1 יש להסיר את המסך המקדים , אין בו צורך 
+222: כאשר לוחצים על מדיניות ואלוקציה בפרטי משרד. לחיצה תכניס ישירות למסך.2. לעדכן את הלחצן ממדיניות אלוקציה וחשיפות ל > הגדרת מדיניות אלוקציה וחשיפות
+223: כל יתר התיקונים מעודכנים במסך: mockup-client-allocation-overrideקיים גם מוקאפ חדש להמחשה.
+224: תודה!
+225: 
+226: Ariel PlanT
+227: August 13, 2026 at 12:16 PM
+228: PLAN-854 שלב 4 — עדכון AI על מדיניות המשרד וגם על מדיניות היוזר
+229: Context
+230: Context GUID: {e94b7a30-2d51-4f8c-b6a9-83e01d5c74f2} - עדכון AI לפי סקופ
+231: הכרעת אריאל (13/08): כרטיס "עדכון AI" יפעל גם על מדיניות המשרד (Type=2) וגם על מדיניות היוזר (Type=3). כיום הסקופ קשיח על היוזר המחובר. ‏("AI כברירת מחדל" — אצל המוצר; ‏QA יבדקו; דיאלוג-לקוחות למשרד — אין צורך.)
+232: ממצאי החקירה — הצינור כבר פרמטרי
+233: ‏BL (‏AllocationPolicyAIBL): ‏GetStatus/GenerateStream/Upsert/FindByScope — כולם מקבלים ‏(strConnectionID, intConnectionType). המכסה כבר פר-סקופ (רשומת ‏AllocationPolicyAIRun לפי ‏ID+Type, עוגן ‏ModifiedDate, ‏AllocationPolicyAILockWeeks=13) ⇒ מכסה משרדית נפרדת ומשותפת לכל מנהלי המשרד — אוטומטית, בלי שינוי.
+234: ‏Tool/Agent/Prompt: ‏scope עובר בהודעת המשתמש (‏BuildScopeContext) ⇒ פרמטרי ה-tool; הפרומפט כבר מנוסח כ"מסגרת בית של משרד" — ניטרלי לסקופ. אין שינוי.
+235: הקישוח ל-user מרוכז ב-4 נקודות בלבד: שני ה-EP-ים (‏Controller:117-118, 137-138), תנאי הכרטיס (‏Controller:100-101), וה-JS שלא שולח סקופ (‏view:765, 808).
+236: פער עקביות שנמצא: ‏GetPolicyRows (הבסיס שה-AI רואה + ולידציית ה"from") נופל ‏scope⇒כללית בלי רמת המשרד — בעוד העמוד (‏JSONGetRiskLevelDetails אחרי שלב 2) מציג ליוזר ‏user⇒office⇒general. בלי יישור, ה-diff של ה-AI יציג "נוכחי" שונה ממה שна המסך.
+237: הערה (לא מטופל עכשיו — קיים מלפני): ‏GetAllocationPolicyTool הוא ‏MCP-exposed בלי בדיקת הרשאה על ה-ConnectionID שהוא מקבל; הנתון = אחוזי מדיניות (לא PII), ‏TokenMap ממסך מזהים. נשאר כמות שהוא.
+238: התוכנית — פאזה אחת
+239: 1. ‏Controller — שני ה-EP-ים מקבלים intConnectionType (‏2/3 בלבד):
+240: GetAllocationPolicyAIStatus(int? intConnectionType) / GenerateAllocationPolicyAIUpdate(int? intConnectionType)
+241: - Office: ValidateOfficeAdminForAllocationPolicy + ConnectionID=OfficeID של המחובר (ריק ⇒ שגיאה) — הדפוס הקיים מהעמוד
+242: - User:   ValidateOfficeAdminForAllocationPolicy (הפרסונה נשמרת) + ConnectionID=המחובר
+243: - אחר/ריק ⇒ שגיאה ידידותית
+244: (ב-SSE השגיאה נכתבת כאירוע ‏error כמו היום.)
+245: 2. ‏Controller — תנאי הכרטיס: ‏blnDisplayAiCard = (Type==Office || Type==User) && IsOfficeAdminOrAdmin.
+246: 3. ‏BL — יישור GetPolicyRows לשרשרת של העמוד: בסקופ יוזר נוספת רמת-ביניים משרד (‏user⇒office⇒general; ‏office נשאר ‏office⇒general); עדכון ההערה המיושנת ("אותה לוגיקה כמו JSONGetRiskLevelDetails"). כך ה"נוכחי" בהצעת ה-AI ובוולידציה = מה שהעמוד מציג.
+247: 4. ‏View:
+248: ‏JS: שתי הקריאות שולחות ‏intConnectionType: intAllocPolicyScopeType (הקבוע קיים מעמוד שלב 2).
+249: תיאור הכרטיס דינמי: משרד — "…הצעת עדכון מנומקת למדיניות המשרד…", יוזר — "…למדיניות האישית שלך…" (‏Razor לפי ‏blnIsOfficeScope).
+250: זרימת האישור/טיוטה — ללא שינוי (ממלאת את טופס הסקופ הנוכחי; השמירה ממילא לסקופ).
+251: קבצים
+252: קובץ
+253: שינוי
+254: Controllers/CustomerRiskLevelController.cs 
+255: פרמטר סקופ + ולידציה בשני ה-EP-ים; תנאי הכרטיס 
+256: ModelsBL/AllocationPolicyAIBL.cs 
+257: רמת משרד ב-GetPolicyRows (סקופ יוזר) 
+258: Views/CustomerRiskLevel/AllocationPolicy.cshtml 
+259: ‏JS שולח סקופ; תיאור כרטיס דינמי (UTF-8-BOM) 
+260: אימות
+261: ‏Rebuild + ‏hard-reload.
+262: ‏Type=2 (מנהל): הכרטיס מוצג; הרצה ⇒ ההצעה מבוססת מדיניות המשרד; אישור ⇒ טיוטה בטופס המשרד ⇒ שמירה ⇒ שורות Office. מכסה: הרצה שנייה חסומה ("זמין בתאריך X") — בלי לחסום את המכסה האישית ב-Type=3 (ולהפך).
+263: ‏Type=3 (מנהל): כמו היום; ה"נוכחי" בהצעה תואם את המוצג (כולל ירושת משרד אחרי "חזרה להגדרות המשרד").
+264: יועץ רגיל ב-Type=3 ⇒ אין כרטיס; קריאת EP ישירה עם ‏Type=2 כיועץ ⇒ שגיאת הרשאה.
+265: ‏DB: רשומות ‏AllocationPolicyAIRuns נפרדות — ‏(OfficeID,2) ו-(UserID,3).
+266: הערות
+267: מכסה משרדית משותפת לכל מנהלי אותו משרד (עוגן על הרשומה המשרדית) — ההתנהגות הרצויה.
+268: חוסר-ההרשאה ב-tool ה-MCP-exposed — קיים מלפני, לא מטופל בשלב זה (מתועד).
+269: 
+270: Ariel PlanT
+271: August 13, 2026 at 9:00 AM
+272: PLAN-854 שלב 3 — רשימת הלקוחות עם אלוקציה אישית (דיאלוג בעמוד היוזר)
+273: Context
+274: Context GUID: {5c8d21e6-9a4f-4b73-8e2d-1f6a35c907b4} - דיאלוג לקוחות עם אלוקציה אישית
+275: דרישת הטיקט: "במסך ההגדרות יופיעו רשימת הלקוחות בהן הוגדרה אלוקציה אישית". הכרעת אריאל (13/08): בעמוד המדיניות ברמת היוזר (‏Type=3): אם ליוזר יש לקוחות עם אלוקציה משלהם — מופיע כפתור/קישור שפותח CustomModalDialog עם רשימתם; לחיצה על לקוח מעבירה לעמוד המדיניות שלו. שים לב ל-AUTH של ה-EP. הניסוח — עליי למצוא טוב מ"האלוקציה לא חלה על לקוחות אלו".
+276: החלטות עיצוב/ניסוח (להצגה במסך)
+277: הקישור בשורת הסקופ (ליד "חזרה להגדרות המשרד"): ‏bi-people + "לקוחות עם אלוקציה אישית (N)" — קצר, עובדתי, הכמות מדברת.
+278: כותרת הדיאלוג: "לקוחות עם אלוקציה אישית".
+279: שורת ההסבר בדיאלוג: "המדיניות שלך אינה חלה על הלקוחות הבאים — לכל אחד מהם הוגדרה אלוקציה משלו. לחיצה על לקוח תפתח את המדיניות האישית שלו."
+280: לחיצה על לקוח ⇒ ניווט (באותו טאב — "מעבירה לעמוד") ל-/CustomerRiskLevel/AllocationPolicy?strConnectionID=<id>&intConnectionType=4.
+281: "הלקוחות של היוזר" = לפי קונבנציית הבית (‏CustomerBL.cs:491): ‏UserManagerID == X || SecondaryUserManagerID == X, לקוחות חיים בלבד.
+282: מימוש
+283: ‏BL — CustomerRiskLevelBL:
+284: ‏GetUserCustomersWithAssignedRiskLevel(objDB, strUserID): מזהי הלקוחות עם שורות Type=4 חיות מהמטמון ‏(GetAllRiskLevelsDetails — מסונן-מחוקים ומתרענן בכל שמירה/שחזור) ⇒ שאילתת ‏Customers (חיים, מנהל ראשי/משני = היוזר, ‏ID ברשימה) ⇒ רשימה ממוינת לפי שם.
+285: ‏Controller — CustomerRiskLevelController:
+286: ב-action, בסקופ יוזר: ‏ViewBag.intCustomersWithOverrideCount (גודל הרשימה עבור המחובר) — לתצוגת הקישור+המונה בלי EP נוסף בטעינה.
+287: ‏EP חדש JSONGetMyCustomersWithAllocationOverride ‏(GET): עצמי בלבד — בלי פרמטרים מהלקוח (המשתמש נקבע בשרת ⇒ אין IDOR); מחזיר ‏[{CustomerID, strDisplayName}] (‏DTO מינימלי, ‏SummaryFullDisplayName). ‏AUTH: רישום ‏CustomerRiskLevel-JSONGetMyCustomersWithAllocationOverride ב-GetUserActionsAllowed (הלקח החוזר) + הסקופ העצמי הוא ההגנה.
+288: ‏View — AllocationPolicy.cshtml (‏UTF-8-BOM, ‏C# 5):
+289: בשורת הסקופ של יוזר: הקישור עם המונה, מרונדר רק כש-intCustomersWithOverrideCount > 0.
+290: תבנית ‏Ractive ‏nd2TemplateAllocPolicyCustomersModal (רשימת שורות-לקוח לחיצות) + ‏JS בדפוס המודאל הקיים של ה-AI: ‏fetch ל-EP ⇒ ‏Ractive לתוך ‏div חדש ⇒ ‏new CustomModalDialog({jobjElement, strTitle: "לקוחות עם אלוקציה אישית", intWidth: 520}).
+291: ‏CSS ב-nd3-allocation-policy.css: ‏nd3-alloc-customers-* (שורות רשימה בטוקני nd3, ‏hover, ‏chevron).
+292: קבצים
+293: קובץ
+294: שינוי
+295: ModelsBL/CustomerRiskLevelBL.cs 
+296: ‏BL הרשימה 
+297: Controllers/CustomerRiskLevelController.cs 
+298: ‏ViewBag מונה + ‏EP 
+299: Common/Authentication.cs 
+300: רישום ה-action 
+301: Views/CustomerRiskLevel/AllocationPolicy.cshtml 
+302: קישור + תבנית + ‏JS 
+303: Design/Nd3_2026/nd3-allocation-policy.css 
+304: סגנון הרשימה 
+305: אימות
+306: ‏Rebuild + ‏hard-reload. גם עם יועץ רגיל (ה-allow-list!).
+307: יוזר עם לקוח מותאם (ישראל כהן) ⇒ בעמוד ‏Type=3 מופיע "לקוחות עם אלוקציה אישית (1)"; לחיצה ⇒ דיאלוג עם הלקוח; לחיצה עליו ⇒ עמוד המדיניות שלו (‏Type=4).
+308: שחזור ההתאמה של הלקוח ⇒ רענון עמוד היוזר ⇒ הקישור נעלם (מונה 0).
+309: יוזר אחר (בלי לקוחות מותאמים) ⇒ אין קישור; ה-EP מחזיר ריק — לא לקוחות של אחרים.
+310: סקופ משרד/לקוח ⇒ אין קישור (יוזר בלבד).
+311: הנחות/הערות
+312: הרשימה = הלקוחות שהיוזר מנהל (ראשי/משני) — לא כל לקוח שהוא מורשה אליו.
+313: גרסה משרדית של הרשימה (למנהל בסקופ 2 — כל לקוחות המשרד) — שלב עתידי אם יתבקש.
+314: 
+315: Ariel PlanT
+316: August 12, 2026 at 4:53 PM
+317: הפיתוח הזה הסתיים סרטון נשלח במייל (מטעמי אבטחת מידע)
+318: 
+319: Ariel PlanT
+320: August 12, 2026 at 12:31 PM
+321: PLAN-854 שלב 2 — סקופים מפורשים ב-URL + ‏Breadcrumbs פר-רמה + רמת משרד אמיתית
+322: Context
+323: Context GUID: {b7e29f14-6c3d-48a5-9e71-2f8c04d6ab59} - סקופים מפורשים ומדיניות משרד
+324: הבעיה (אריאל, 12/08): ‏/CustomerRiskLevel/AllocationPolicy בלי פרמטרים מציג בשקט את רמת ה-User של המחובר — אותו URL, תוכן שונה למשתמשים שונים, בלי חיווי רמה. ו"מדיניות המשרד" של PLAN-811 נשמרת בפועל פר-יועץ — אין שורות Office אמיתיות.
+325: הכרעות אריאל: ‏URL תמיד עם intConnectionType מפורש; בלי פרמטרים — שגיאה. ‏Type=2=משרד (מנהל משרד), ‏Type=3=היוזר עצמו (כל יועץ, כולל מנהל משרד לעצמו — תואם אפיון), ‏Type=4=לקוח (קיים). ‏Breadcrumbs שמראים את הרמה:
+326: משרד: ראשי ← פרטי משרד (‏/Preferences/IndexOfficePreferences) ← מדיניות אלוקציה וחשיפות
+327: יוזר: ראשי ← <שם היוזר> (‏/Preferences/IndexPreferences) ← מדיניות אלוקציה וחשיפות
+328: לקוח: כמו הרכב תיק — ראשי ← הלקוחות שלי ← <הלקוח + תגית סטטוס> ← אלוקציה וחשיפות (‏/SumDivision/AnalyseAllocation?strCustomerID=…) ← מדיניות אלוקציה וחשיפות
+329: רקע טכני (מהחקירה)
+330: ‏Breadcrumbs ב-_LayoutNewMain3: ‏ViewBag.Breadcrumbs (‏IEnumerable<KeyValuePair<string,string>>, ‏Key=טקסט, ‏Value=קישור, ריק=span) — מחליף את כל השרשרת כולל האחרון; אף view לא משתמש בו עדיין. שרשרת הלקוח (הלקוחות שלי + שם + תגית) נדלקת אוטומטית מ-ViewBag.strCustomerID (ה-layout טוען את הלקוח בעצמו, 48-95) + ‏@section sectionBreadcrumbBeforeLast להזרקת crumb לפני האחרון (דוגמה: "מסך נכסים" ב-HerkevTik.cshtml:37-44 — הסקשן פולט בעצמו את ה-chevron).
+331: 🔴 ‏Authentication.GetCurrentOfficeID() מת — מחזיר תמיד null (‏IsOfficePlatform() קשיח false). מקור המשרד: Authentication.GetCurrentUserDetails().OfficeID. שם לתצוגה: ‏SummaryUserDisplayName (כמו בפרופיל שבהדר).
+332: ‏JSONGetRiskLevelDetails: ‏non-admin עם Type שאינו Customer נכפה היום ל-(המחובר, ‏User) — התנהגות שהדיאלוג הישן תלוי בה (קורא בלי פרמטרים). ההרחבה חייבת לשמר אותה.
+333: ‏UpdateRiskLevelDetails: אין שום ולידציית סקופ — כל מחובר יכול לשמור לכל ‏ConnectionID (חור קיים; ניסגר עכשיו כשהסקופים מפורשים).
+334: ‏caveat ‏1750: ‏GetCustomerRiskAssetsAllPicture מעביר ‏strOfficeID=null ל-GetRiskLevelRangeDetails (וגם ב-1771) ⇒ מדיניות משרד תדולג במסלול הזה. ה-overload האח (2074) עושה נכון: ‏objCustomer.UserManager?.OfficeID. ב-1740 הלקוח נטען בלי includes ⇒ נשלוף את משתמש-המנהל נקודתית. התיקון אינרטי עד שיהיו שורות Office.
+335: ‏EditUserDetails יכול לערוך גם משתמש אחר (אדמין). הכפתור ("למשרד") ינווט ל-Type=2 של הצופה — אותו מעמד כמו היום (שפתח את המדיניות של הצופה); שדרוג עתידי אפשרי.
+336: הערה התנהגותית חשובה: לכל היועצים הקיימים כבר יש שורות User (הדיאלוג הישן שמר פר-יועץ). מדיניות משרד חדשה תחול רק על מי שאין לו override — או שילחץ "חזרה להגדרות המשרד". זו בדיוק ההיררכיה שבאפיון.
+337: 
+338: התוכנית — 3 פאזות (עצירה לסקירה אחרי כל אחת)
+339: פאזה 1 — שרת: סקופים, ולידציות, שחזור-יוזר, ותיקון 1750
+340: ‏AllocationPolicy action — ‏switch מפורש על intConnectionType:
+341: ‏null/לא מוכר ⇒ ‏LogBL.ThrowExceptionWithUserMessage("יש לציין רמת מדיניות: משרד (2), משתמש (3) או לקוח (4)").
+342: ‏2 (משרד): ‏ValidateOfficeAdminForAllocationPolicy + ‏GetCurrentUserDetails().OfficeID (ריק ⇒ שגיאה "למשתמש אינו משויך משרד"); ‏ID לא עובר ב-URL — נקבע בשרת. ‏ViewBag.Breadcrumbs = ‏[ראשי→"/", פרטי משרד→"/Preferences/IndexOfficePreferences", מדיניות אלוקציה וחשיפות→ריק].
+343: ‏3 (יוזר): ללא גידור מנהל (כל יועץ — פותר את שגיאת §8 ליועצים); ‏ID=המחובר בשרת. ‏Breadcrumbs = ‏[ראשי, ‏<SummaryUserDisplayName>→"/Preferences/IndexPreferences", אחרון].
+344: ‏4 (לקוח): קיים + ‏**ViewBag.strCustomerID = strConnectionID** ⇒ שרשרת הלקוח של ה-layout נדלקת מעצמה.
+345: ‏ViewBag חדשים: ‏intAllocPolicyScopeType, ‏blnDisplayAiCard (‏scope==3 && ‏IsOfficeAdminOrAdmin — משמר את הפרסונה של היום; שאלת "AI על מדיניות משרד" נדחית לשלב ה-AI).
+346: ‏JSONGetRiskLevelDetails — הרחבת ענף ה-non-admin: ‏Type=Office ⇒ בדיקת מנהל-משרד + ‏strConnectionID=OfficeID של המחובר; אחרת — הכפייה הקיימת ל-User נשארת כלשונה (תאימות הדיאלוג הישן). אדמין עם ‏Type=Office בלי ID ⇒ המשרד שלו (ריק ⇒ שגיאה).
+347: ‏UpdateRiskLevelDetails — ולידציית סקופ חדשה אחרי בדיקות ה-ConnectionType (ל-non-admin): ‏Customer ⇒ ‏CheckIfUserAllowedToCustomer; ‏Office ⇒ מנהל-משרד + ‏ID==המשרד שלו; ‏User ⇒ ‏ID==המחובר; אחר ⇒ שגיאה. (אדמין — ‏passthrough כהיום.)
+348: ‏EP חדש RestoreCurrentUserRiskLevelDefaults ‏[HttpPost, בלי פרמטרים — עצמי בלבד]: ‏BL ‏RestoreUserRiskLevelDefaults(objDB, strUserID) במראה של שחזור-הלקוח (מחיקה רכה של שורות ‏Type=3 + ‏RefreshRiskLevelsCache). רישום ב-GetUserActionsAllowed (הלקח החוזר).
+349: תיקון 1750+1771: שליפת משתמש-המנהל (‏objDB.Users לפי ‏UserManagerID) ⇒ העברת ‏OfficeID שלו במקום ‏null.
+350: Commit מוצע: סקופים מפורשים במדיניות אלוקציה
+351: פאזה 2 — העמוד: ‏scope-notes, ‏AI, חזרה להגדרות המשרד, ‏breadcrumb לקוח
+352: ‏AllocationPolicy.cshtml ‏(UTF-8-BOM, ‏C# 5):
+353: ‏inputs נסתרים: ‏intConnectionType תמיד לפי הסקופ; ‏strConnectionID רק בלקוח (משרד/יוזר — השרת קובע).
+354: ‏scope-note פר-רמה (אותו רכיב קיים):
+355: משרד: "מדיניות ברמת המשרד — חלה על כל יועצי המשרד, אלא אם הוגדרה ליועץ או ללקוח מדיניות משלהם."
+356: יוזר: "המדיניות האישית שלך — גוברת על מדיניות המשרד עבורך בלבד." + קישור "חזרה להגדרות המשרד" (‏bi-arrow-counterclockwise, מוצג רק כשיש שורות ‏User בתשובה — זיהוי ‏ID≠null הקיים) ⇒ ‏confirm ⇒ ‏EP החדש ⇒ ‏trigger("change"). ‏(דרישת האפיון "בכל רגע נתון בלחיצת כפתור".)
+357: לקוח: קיים (דיסקליימר + מי-ערך + שחזור).
+358: כרטיס ‏AI: לפי ‏blnDisplayAiCard (במקום ‏!blnIsCustomerScope).
+359: ‏@section sectionBreadcrumbBeforeLast בסקופ לקוח: ‏chevron + ‏<a href="/SumDivision/AnalyseAllocation?strCustomerID=…">אלוקציה וחשיפות</a> (בדפוס HerkevTik).
+360: Commit מוצע: עמוד מדיניות לפי סקופ
+361: פאזה 3 — ניתוב נקודות הכניסה לפי סקופ
+362: נקודה
+363: יעד
+364: ‏IndexOfficePreferences (כפתור) 
+365: ‏?intConnectionType=2 
+366: ‏IndexPreferences (כפתור) 
+367: ‏?intConnectionType=3 
+368: ‏UserDashboard4 + ‏Mockup 
+369: ‏?intConnectionType=3 
+370: ‏AnalyseAllocation2 — ‏2 הפונקציות הכלליות (תפריט פלוס) 
+371: ‏?intConnectionType=3 
+372: ‏AnalyseAllocation2 — קישור הלקוח 
+373: ‏Type=4 (קיים) 
+374: ‏EditUserDetails + ‏Layout3 ("למשרד") ×3 
+375: ‏?intConnectionType=2 
+376: Commit מוצע: ניתוב כניסות מדיניות לפי סקופ
+377: 
+378: קבצים
+379: קובץ
+380: פאזה
+381: שינוי
+382: Controllers/CustomerRiskLevelController.cs 
+383: 1 
+384: ‏switch סקופים + שגיאה + ‏Breadcrumbs + ‏JSONGet/Update ולידציות + ‏EP שחזור-יוזר 
+385: ModelsBL/CustomerRiskLevelBL.cs 
+386: 1 
+387: ‏RestoreUserRiskLevelDefaults + תיקון ‏1750/1771 
+388: Common/Authentication.cs 
+389: 1 
+390: רישום ‏CustomerRiskLevel-RestoreCurrentUserRiskLevelDefaults 
+391: Views/CustomerRiskLevel/AllocationPolicy.cshtml 
+392: 2 
+393: ‏scope-notes, ‏AI, חזרה-למשרד, ‏breadcrumb section (UTF-8-BOM) 
+394: Design/Nd3_2026/nd3-allocation-policy.css 
+395: 2 
+396: סגנון קישור החזרה (שימוש חוזר ב-nd3-alloc-scope-restore) 
+397: ‏6 קבצי נקודות הכניסה 
+398: 3 
+399: הוספת ‏?intConnectionType=N לניווטים 
+400: אימות
+401: ‏Rebuild + ‏hard-reload. לבדוק גם עם יועץ רגיל ומנהל-משרד לא-אדמין!
+402: ‏URL חשוף: בלי פרמטרים ⇒ עמוד שגיאה ידידותי. ‏Type=2 כיועץ רגיל ⇒ שגיאת מנהל; כמנהל בלי משרד ⇒ שגיאה ברורה.
+403: ‏Breadcrumbs: משרד ⇒ ראשי←פרטי משרד←מדיניות; יוזר ⇒ ראשי←<שם>←מדיניות; לקוח ⇒ ראשי←הלקוחות שלי←לקוח+תגית←אלוקציה וחשיפות←מדיניות.
+404: משרד אמיתי: שמירה כמנהל ב-Type=2 ⇒ נשמרות שורות ‏Office (בדיקת DB); יועץ של המשרד בלי override רואה את ערכי המשרד במסך האלוקציות (התיקון של 1750); יועץ עם override ממשיך לראות את שלו.
+405: חזרה להגדרות המשרד (‏Type=3): הקישור מופיע רק כשיש override; לחיצה ⇒ הטווחים חוזרים לערכי המשרד/כללי.
+406: תאימות: דגל כבוי ⇒ הדיאלוג הישן קורא ושומר כרגיל (ה-null-fallback נשמר); שמירת סקופ לקוח מהעמוד עובדת כמו קודם.
+407: סיכונים / הערות
+408: ‏GetCurrentOfficeID() המת — לא נוגעים בו; עוקפים דרך ‏GetCurrentUserDetails().OfficeID.
+409: כפתור "למשרד" בעריכת-משתמש-אחר ע"י אדמין מנווט למשרד של הצופה (כמו התנהגות היום) — מתועד, שדרוג עתידי.
+410: ‏AI ברמת משרד — מחוץ לסקופ; הכרטיס נשאר על ‏Type=3 למנהלי משרד (סטטוס-קוו).
+411: רשימת "לקוחות עם אלוקציה אישית" במסך ההגדרות + ‏"AI כברירת מחדל" — שלבים הבאים.
+412: 
+413: Ariel PlanT
+414: August 11, 2026 at 12:02 PM
+415: PLAN-854 שלב 1 — התאמת אלוקציה ללקוח במסך "אלוקציה וחשיפות" + דגל חשיפה ב-Web.config
+416: Context
+417: Context GUID: {d3f0a1c7-4b8e-4c92-9f5a-6e2b81d4c703} - התאמת אלוקציה ללקוח + דגל חשיפה
+418: טיקט: PLAN-854 — "עדכון מדיניות וחשיפות" (Reporter: Lihi Lotan, בהמשך לפגישה עם עידן). זהו השלב הראשון של המשימה: צד הלקוח במסך "אלוקציה וחשיפות" + חיווט כל נקודות הכניסה של המסך החדש (PLAN-811, שהוקפא) תחת דגל Web.config. רמות משרד/משתמש, רשימת הלקוחות המותאמים ו"AI כברירת מחדל" — בשלבים הבאים.
+419: הכרעות אריאל (11/08):
+420: המסך החדש של PLAN-811 (/CustomerRiskLevel/AllocationPolicy) הוא העיצוב הקובע. המוקאפ החדש (mockup-client-allocation-override.html) — פונקציונלי בלבד.
+421: דיאלוג ההתאמה ללקוח = המסך החדש בסקופ לקוח.
+422: מסך האלוקציות: החלפת שורת הדיסקליימר + כפתור אחד להתאמת אלוקציה ברמת לקוח בלבד; ללקוח עם התאמה קיימת — תצוגת "מצב ב'" מהמוקאפ (תגית + עריכה + שחזור).
+423: כל נקודות הכניסה תחת דגל Web.config.
+424: רקע טכני (מהחקירה)
+425: המסך החדש כבר תומך בסקופ לקוח (‏scope-note, בלי כרטיס AI, ‏CheckIfUserAllowedToCustomer), אבל הכניסה חסומה ב-ValidateOfficeAdminForAllocationPolicy() גם בסקופ לקוח.
+426: הרשאת "עריכת פרופיל סיכון" במסך האלוקציות = ללא גידור (הקישור מרונדר לכולם) ⇒ לפי המוקאפ ("זהה להרשאת עריכת פרופיל סיכון"), התאמת לקוח לא דורשת מנהל-משרד.
+427: שורת הדיסקליימר: ‏AnalyseAllocation2.cshtml:773-789 — ‏takanon-container עם resource ‏InfoSubTitle_ProfileRisk + שני קישורים (כללי + לקוח; הלקוח מאחורי 1==1 ||). שורת הפרופיל: ‏risk-profile-container ‏(753-772), ‏#spanCustomerRiskLevel מתמלא מ-AJAX.
+428: ‏JSONGetRiskLevelDetails בסקופ לקוח: שורת לקוח קיימת ⇒ מוחזרת; אחרת שורת General עם RiskLevelDetailsID=null ⇒ שורה עם ID ≠ null = מותאמת. השמירה יוצרת שורות ConnectionType=4 לכל 5 הפרופילים (התנהגות קיימת — לא משתנה).
+429: אין שום מנגנון מחיקה ל-RiskLevelDetails בכל הקוד ⇒ "שחזור לברירת מחדל" = ‏EP חדש. מחיקה רכה נתמכת במודל (objRecordUserData.DeletedDate, מסונן בקריאות) — ‏RecordUserDataBL.UpdateDeleteData ‏(RecordUserDataBL.cs:55). ⚠️ ‏UpdateRiskLevelDetails:344 לא מסנן DeletedDate — רלוונטי רק מרגע שקיימות שורות מחוקות (אנחנו יוצרים את המצב הזה).
+430: "מי ערך ומתי": ‏RecordUserData.ModifiedByDisplayName מסתלסל אוטומטית ב-JSON של ה-EP — אין צורך בשינוי שרת.
+431: 🔴 פער PLAN-811 שהתגלה: משתמש שאינו אדמין (כולל מנהל משרד) נבדק מול ה-allow-list הקשיח Authentication.GetUserActionsAllowed() (אכיפה ב-MonitorActionBL.cs:714). ‏CustomerRiskLevel-JSONGetRiskLevelDetails/UpdateRiskLevelDetails רשומים (3400-3401), אבל AllocationPolicy ושני ה-EP של ה-AI לא נרשמו מעולם — המסך החדש נבדק רק עם אדמין (הלקח החוזר!).
+432: 9 נקודות קריאה ב-7 קבצים מוקפאות בהערת //PLAN-811 (הניווט המוער כבר מוכן ברובן).
+433: דפוס דגל בבית: ‏Ofek.Global.GetConfigValue("Key", "false") == "true" ב-Razor; בתוך JS — פליטת literal ‏(if (@(... ? "true" : "false"))). מפתח opt-in לא חייב להופיע ב-Web.config.
+434: ‏Nd3Tabs ‏(nd3-tabs.js): ‏lstTabs:[{strTitle}], ‏intActiveIndex, ‏fncOnChange; התבנית nd3TemplateTabs ב-Nd3TemplatesView.cshtml (‏cp1255!). אין תמיכה בתג/סימון פר-טאב — נוסיף אופציה.
+435: פרופיל הסיכון של הלקוח: ‏CustomerRiskLevelBL.GetCustomerRiskAssetsAllPicture ‏(1730-1783) ⇒ ‏enmProfileRiskLevelType (או null ⇒ "לא מוגדר").
+436: 
+437: התוכנית — 4 פאזות (עצירה לסקירה אחרי כל פאזה)
+438: פאזה 1 — דגל החשיפה + חיווט כל נקודות הכניסה
+439: מפתח חדש: ShowNewAllocationPolicy (ברירת מחדל "false" בקוד — דפוס ה-opt-in; יתווסף כ-true ל-Web.config המקומי לבדיקות).
+440: בכל 9 נקודות הקריאה — החלפת הערת ההקפאה בענף על הדגל; ענף כבוי = הקוד הקיים כלשונו:
+441: קובץ
+442: נקודות
+443: דגל דלוק ⇒
+444: Views/SumDivision/AnalyseAllocation2.cshtml 
+445: ‏3 הפונקציות (1289-1308) 
+446: ניווט לעמוד (הלקוח: עם strConnectionID+intConnectionType=4) 
+447: Views/Users/EditUserDetails.cshtml:1132 + EditUserDetailsLayout3.cshtml:1261,1308 
+448: ‏actiononclick 
+449: ניווט לעמוד (הנקודה המתה ב-1261 מקבלת אותו טיפול, בלי להחיותה) 
+450: Views/Preferences/IndexPreferences.cshtml:132,287 
+451: הטמעה inline + builder 
+452: כפתור ניווט במקום ה-divcontainer (הקוד המוער המוכן) 
+453: Views/Preferences/IndexOfficePreferences.cshtml:96 
+454: הטמעה inline 
+455: אותו דפוס 
+456: Views/Dashboard/UserDashboard4.cshtml:107 + UserDashboard4Mockup.cshtml:365 
+457: ‏redirect 
+458: ניווט לעמוד 
+459: רישום ההרשאות (השלמת פער PLAN-811 + הפעולה החדשה): הוספה ל-lstUserAllowedActions ב-Authentication.GetUserActionsAllowed():CustomerRiskLevel-AllocationPolicy, ‏CustomerRiskLevel-GetAllocationPolicyAIStatus, ‏CustomerRiskLevel-GenerateAllocationPolicyAIUpdate, ‏CustomerRiskLevel-RestoreCustomerRiskLevelDefaults (של פאזה 3).
+460: ⚠️ הערה גלויה: עד מימוש רמות משרד/משתמש (השלבים הבאים), דגל דלוק מוביל יועץ שאינו מנהל-משרד מנקודות הכניסה הכלליות לשגיאת ההרשאה של PLAN-811. הדגל נשאר כבוי בסביבות אמיתיות עד סוף המשימה.
+461: Commit מוצע: דגל חשיפה למדיניות אלוקציה
+462: פאזה 2 — מסך אלוקציה וחשיפות: ה-UX החדש (דגל דלוק בלבד)
+463: שרת — ‏SumDivisionController.AnalyseAllocation ‏(111-183):
+464: ‏BL חדש ‏CustomerRiskLevelBL.CheckIfCustomerAssignedRiskLevel(objDB, strCustomerID) — כמו ‏CheckIfUserAssignedRiskLevel ‏(2736) אבל ‏ConnectionType=Customer (דרך המטמון ‏GetAllRiskLevelsDetails, שמסנן מחוקים ומתרענן בכל כתיבה) ⇒ ‏ViewBag.blnCustomerHasAllocationOverride.
+465: ‏View — ‏AnalyseAllocation2.cshtml, הכל בענף @if על הדגל (ענף כבוי = הקיים כלשונו):
+466: הסתרת בלוק takanon-container (773-789) — יורדת שורת "באפשרותך לערוך…" ושני הקישורים.
+467: שורת הפרופיל ‏(risk-profile-text):
+468: מצב א' (אין התאמה): ‏· + קישור שקט "התאמת אלוקציה וחשיפות ללקוח" ⇒ ניווט לעמוד בסקופ לקוח.
+469: מצב ב' (יש התאמה): ‏פועל לפי הגדרות מותאמות אישית ‏· ‏עריכה (אותו ניווט) · שחזור לברירת מחדל (אישור ⇒ ‏POST ל-EP של פאזה 3 ⇒ ‏location.reload()).
+470: תגית "אלוקציה מותאמת אישית" במצב ב' (הכרעת אריאל): ברצועת ה-badges של הכותרת ליד "פעיל" — ‏_LayoutNewMain3.cshtml:1424 ‏(<span class="badges">), מאחורי ViewBag opt-in (‏ViewBag.blnDisplayCustomAllocationBadge שנקבע רק ב-AnalyseAllocation) ⇒ אפס השפעה על שאר מסכי הלקוח. ‏Layout2 הישן — לא נוגעים (אין בו רצועת badges).
+471: עיצוב בשפת המסך הקיים (nd2) — לא צבעי המוקאפ.
+472: Commit מוצע: התאמת אלוקציה ללקוח במסך חשיפות
+473: פאזה 3 — ‏Endpoint שחזור לברירת מחדל
+474: ‏CustomerRiskLevelController.RestoreCustomerRiskLevelDefaults(string strCustomerID) ‏[HttpPost]: גידור ‏CheckIfUserAllowedToCustomer (ללא דרישת מנהל-משרד — כמו עריכת פרופיל סיכון) ⇒ קריאה ל-BL ⇒ ‏Json סטטוס.
+475: ‏BL ‏CustomerRiskLevelBL.RestoreCustomerRiskLevelDefaults(objDB, strCustomerID): שליפת שורות ConnectionType=4 חיות של הלקוח ⇒ ‏RecordUserDataBL.UpdateDeleteData לכל אחת (מחיקה רכה — נשמר תיעוד מי/מתי לפי האפיון) ⇒ ‏SaveChanges ⇒ ‏RefreshRiskLevelsCache.
+476: תיקון נלווה מתחייב: הוספת סינון DeletedDate == null ל-lstCurrent ב-UpdateRiskLevelDetails:344 — בלעדיו, שמירה עם ID של שורה שנמחקה (טאב ישן) תערוך בשקט שורה מחוקה. עם הסינון ⇒ שגיאה מפורשת.
+477: Commit מוצע: שחזור אלוקציית לקוח לברירת מחדל
+478: פאזה 4 — המסך החדש בסקופ לקוח (השלמות)
+479: ‏Controller — ‏AllocationPolicy:
+480: ‏ValidateOfficeAdminForAllocationPolicy() יופעל רק בסקופ הכללי (סקופ לקוח: ‏CheckIfUserAllowedToCustomer הקיים בלבד — ההרשאה כשל עריכת פרופיל סיכון).
+481: בסקופ לקוח: ‏GetCustomerRiskAssetsAllPicture ⇒ ‏ViewBag.intCustomerRiskLevelType (‏null אם לא מוגדר).
+482: ‏View — ‏AllocationPolicy.cshtml (‏UTF-8-BOM!, ‏C# 5) בסקופ לקוח:
+483: דיסקליימר בנוסח הטיקט ב-scope-note: "בחלונית זו מוצגת המדיניות החלה כעת על כלל הלקוחות, ככל ותבצע בחלונית זו שינוי היא תחול על הלקוח הספציפי בלבד."
+484: אינדיקציה מי ערך ומתי: בשורת ה-scope-note, מחושבת ב-JS מהשורות המותאמות (‏max ‏ModifiedDate + ‏ModifiedByDisplayName; אין שורות מותאמות ⇒ לא מוצגת).
+485: הדגשת פרופיל הלקוח ("השורה בה נמצא הלקוח תודגש"): פתיחה אוטומטית על הטאב של הפרופיל + תג קטן על הטאב ("הפרופיל של הלקוח"). מימוש בדרך התצורה: הרחבת ‏Nd3Tabs באופציה פר-טאב ‏strBadge + עדכון תבנית nd3TemplateTabs (‏עריכה דרך PowerShell עם Encoding 1255!) + ‏CSS ב-nd3-components.css. פרופיל לא מוגדר ⇒ התנהגות היום (טאב 0, בלי תג).
+486: קישור משני "שחזור לברירת מחדל" ליד ה-scope-note (מוצג רק כשיש שורות מותאמות): אישור ⇒ אותו EP ⇒ רענון ה-store (‏trigger("change")).
+487: Commit מוצע: סקופ לקוח במסך מדיניות אלוקציה
+488: 
+489: קבצים
+490: קובץ
+491: פאזה
+492: שינוי
+493: Common/Authentication.cs 
+494: 1 
+495: ‏4 רישומי actions ב-GetUserActionsAllowed 
+496: ‏7 קבצי ה-views של נקודות הכניסה 
+497: 1 
+498: ענף דגל בכל נקודה 
+499: Web.config (מקומי) 
+500: 1 
+501: ‏ShowNewAllocationPolicy=true לבדיקות 
+502: Controllers/SumDivisionController.cs 
+503: 2 
+504: ‏ViewBag flags ל-AnalyseAllocation 
+505: ModelsBL/CustomerRiskLevelBL.cs 
+506: 2,3 
+507: ‏CheckIfCustomerAssignedRiskLevel + ‏RestoreCustomerRiskLevelDefaults 
+508: Views/SumDivision/AnalyseAllocation2.cshtml 
+509: 1,2 
+510: דגל + ‏UX חדש (ANSI/cp1255) 
+511: Views/Shared/_LayoutNewMain3.cshtml 
+512: 2 
+513: תגית ברצועת ה-badges מאחורי ViewBag opt-in (זהירות: layout משותף) 
+514: Controllers/CustomerRiskLevelController.cs 
+515: 3,4 
+516: ‏EP שחזור + פיצול הרשאה + ‏ViewBag פרופיל + סינון DeletedDate 
+517: Views/CustomerRiskLevel/AllocationPolicy.cshtml 
+518: 4 
+519: דיסקליימר, מי-ערך, תג-טאב, שחזור (UTF-8-BOM) 
+520: Design/Nd3_2026/nd3-tabs.js + nd3-components.css 
+521: 4 
+522: אופציית strBadge פר-טאב 
+523: Views/Scripts/Nd3TemplatesView.cshtml 
+524: 4 
+525: תבנית הטאבים (cp1255 דרך PowerShell!) 
+526: אימות
+527: ‏Build (‏Rebuild ב-VS — לא CLI) + ‏hard-reload (‏JS מטומן ~16ש').
+528: דגל כבוי: המערכת זהה להיום — הדיאלוגים הישנים בכל 9 הנקודות, השורה הישנה במסך האלוקציות.
+529: דגל דלוק, מסך אלוקציות: שורת "באפשרותך לערוך" איננה; מצב א' — קישור יחיד שמנווט לעמוד בסקופ לקוח; שמירה שם ⇒ חזרה למסך ⇒ מצב ב' (תגית + עריכה + שחזור); שחזור ⇒ אישור ⇒ חזרה למצב א' והטווחים חוזרים לברירת המחדל (בדיקת cache!).
+530: סקופ לקוח בעמוד: דיסקליימר חדש, טאב הפרופיל של הלקוח נפתח ומסומן, מי-ערך-ומתי אחרי שמירה, כרטיס AI לא מוצג.
+531: עם משתמש שאינו מנהל (הלקח החוזר!): יועץ רגיל — הכפתור במסך האלוקציות עובד מקצה לקצה; מנהל משרד — גם המסך הכללי + ‏AI. אדמין — הכל.
+532: רגרסיה: דגל כבוי ⇒ הדיאלוג הישן עובד; ‏UpdateRiskLevelDetails מהדיאלוג הישן עדיין שומר.
+533: סיכונים / הערות
+534: נקודות כלליות תחת דגל דלוק ⇒ שגיאת הרשאה ליועץ רגיל עד השלבים הבאים (מתועד; דגל כבוי בסביבות).
+535: קידודים: ‏cshtml=ANSI/cp1255 ‏(פרט ל-AllocationPolicy.cshtml=UTF-8-BOM), ‏Nd3TemplatesView=cp1255 דרך PowerShell, ‏JS/CSS=UTF-8.
+536: ‏C# 5 בלבד ב-cshtml (בלי ‏?./‏$"").
+537: השמירה בסקופ לקוח ממשיכה ליצור 5 שורות (כל הפרופילים) — התנהגות קיימת, לא נגענו.
+538: 

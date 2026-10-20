@@ -1,0 +1,30 @@
+[
+  {
+    "allocation_algorithm_and_business_output_byte_unchanged": true,
+    "budget_history_and_counting_rules_unchanged": true,
+    "encoding_and_line_endings_preserved": true,
+    "file": "פרומפט עדכון 12_57 20_10.txt",
+    "no_empty_candidate_verification": true,
+    "only_approved_research_sections_updated": true,
+    "original_whitelist_unchanged": true,
+    "partial_candidates_require_full_final_verification": true,
+    "sha256": "31ff0c603c5850a5d8d5da9eeb3112fe02dcf5cacbd96fef6dd7f94a90858d65"
+  },
+  {
+    "changed_cells": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ],
+    "changed_package_parts": [
+      "xl/sharedStrings.xml"
+    ],
+    "file": "WebSearch (1) V2.xlsx",
+    "non_target_cells_and_properties_unchanged": true,
+    "only_agent_specific_addition_updated": true,
+    "sha256": "fbd20621ae4977e89ee0541efd6a29d06cde395f37bcaaebd7c4600809e9ed46",
+    "sheet_count": 60,
+    "tool_return_contract_and_shared_descriptions_unchanged": true
+  }
+]

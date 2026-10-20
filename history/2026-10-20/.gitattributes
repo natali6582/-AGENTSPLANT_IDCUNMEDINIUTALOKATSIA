@@ -1,0 +1,6 @@
+** -text
+iterations/** -diff
+sources/** -diff
+conversations/** -diff
+logs/** -diff
+before_delivery/** -diff

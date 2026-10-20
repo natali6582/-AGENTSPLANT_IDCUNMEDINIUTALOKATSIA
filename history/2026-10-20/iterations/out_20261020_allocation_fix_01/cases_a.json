@@ -1,0 +1,24 @@
+{
+  "cases_passed": [
+    "valid_in_bounds_fixture_for_previously_out_of_bounds_profile",
+    "partial_correction_rejected",
+    "unverified_research_rejected",
+    "single_distinct_institution_rejected",
+    "profile_order_violation_rejected",
+    "incorrect_allocation_sum_rejected",
+    "malformed_source_data_rejected",
+    "bounded_verification_retry_and_no_automatic_budget_reset",
+    "homepage_only_UBS_result_requires_verification_completion"
+  ],
+  "existing_out_of_bounds_profiles_eligible_for_examination": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "live_agent_tested": false,
+  "mode": "Static contract and arithmetic fixtures; not an agent execution",
+  "research_fixture_is_synthetic": true,
+  "same_policy_in_both_logs": true
+}

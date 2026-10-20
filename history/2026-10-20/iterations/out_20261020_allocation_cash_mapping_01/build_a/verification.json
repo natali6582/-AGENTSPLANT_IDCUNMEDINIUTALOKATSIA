@@ -1,0 +1,24 @@
+{
+  "all_other_F2_paragraphs_unchanged": true,
+  "changed_cells": [
+    [
+      "מידע כללי",
+      "F2"
+    ],
+    [
+      "תוספות לתיאור הכלים",
+      "I12"
+    ]
+  ],
+  "changed_package_parts": [
+    "xl/sharedStrings.xml",
+    "xl/worksheets/sheet2.xml"
+  ],
+  "general_H12_and_all_other_cells_unchanged": true,
+  "missing_duplicate_or_invalid_cashExp_remains_structural_error": true,
+  "name": "GetAllocationPolicy V2.xlsx",
+  "no_policy_values_bounds_or_mapping_changed": true,
+  "sha256": "b33b00c061ac77f4c6ce3685905cefe586862e5c43cb2f0f655aeff6d70e5af5",
+  "sheet_count": 60,
+  "styles_RTL_tables_and_metadata_preserved": true
+}

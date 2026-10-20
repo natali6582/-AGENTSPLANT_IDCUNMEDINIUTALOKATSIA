@@ -1,0 +1,110 @@
+{
+  "allocation_policy_v2_unchanged": true,
+  "case_count": 11,
+  "cases": [
+    {
+      "actions": [
+        "discovery",
+        "discovery_recovery",
+        "verification"
+      ],
+      "calls": 3,
+      "name": "empty_discovery_recovers_then_verifies",
+      "status": "verified"
+    },
+    {
+      "actions": [
+        "discovery",
+        "discovery_recovery"
+      ],
+      "calls": 2,
+      "name": "second_empty_discovery_stops",
+      "status": "incomplete"
+    },
+    {
+      "actions": [
+        "discovery",
+        "discovery_recovery"
+      ],
+      "calls": 2,
+      "name": "recovered_discovery_is_not_verification",
+      "status": "pending_verification"
+    },
+    {
+      "actions": [
+        "discovery",
+        "discovery_recovery",
+        "verification"
+      ],
+      "calls": 3,
+      "name": "verification_gap_after_discovery_recovery_cannot_retry",
+      "status": "incomplete"
+    },
+    {
+      "actions": [
+        "discovery",
+        "verification",
+        "verification_recovery"
+      ],
+      "calls": 3,
+      "name": "verification_recovery_still_available_after_good_discovery",
+      "status": "verified"
+    },
+    {
+      "actions": [
+        "discovery",
+        "verification",
+        "verification_recovery"
+      ],
+      "calls": 3,
+      "name": "empty_verification_uses_shared_recovery",
+      "status": "verified"
+    },
+    {
+      "actions": [
+        "discovery",
+        "verification"
+      ],
+      "calls": 2,
+      "name": "valid_empty_candidate_list_does_not_restart_discovery",
+      "status": "completed_without_evidence"
+    },
+    {
+      "actions": [
+        "discovery",
+        "verification",
+        "verification_recovery"
+      ],
+      "calls": 3,
+      "name": "recovery_does_not_repeat",
+      "status": "incomplete"
+    },
+    {
+      "actions": [
+        "discovery"
+      ],
+      "calls": 1,
+      "name": "explicit_failure_does_not_gain_new_retry_permission",
+      "status": "incomplete"
+    },
+    {
+      "actions": [
+        "discovery"
+      ],
+      "calls": 2,
+      "name": "budget_must_reserve_verification",
+      "status": "incomplete"
+    },
+    {
+      "actions": [
+        "discovery"
+      ],
+      "calls": 1,
+      "name": "used_recovery_is_not_reset",
+      "status": "incomplete"
+    }
+  ],
+  "latest_log_contains_empty_first_search": true,
+  "live_agent_tested": false,
+  "mode": "Static prompt checks and independent reference scenarios; no live agent execution"
+}

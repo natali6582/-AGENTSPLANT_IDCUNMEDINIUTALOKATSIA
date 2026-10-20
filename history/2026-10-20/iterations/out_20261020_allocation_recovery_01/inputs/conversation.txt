@@ -1,0 +1,491 @@
+======================================================================
+שם הסוכן: עדכון מדיניות אלוקציה
+גרסת הסוכן: AllocationPolicyUpdateAgent@v6d79452e-70b0-44c9-838f-3a0a8f2410f7
+מזהה השיחה: a344fb19-975a-4f76-a873-ef85c6e2ec35
+מזהה הלקוח: (השיחה לא נפתחה בהקשר לקוח)
+הקשר הפתיחה: (לא נשמר - שיחה ישנה או שיחה שנפתחה ללא הקשר)
+תאריך ושעת השיחה: 20/10/2026 12:28:26
+משתמש: נטלי קויפמן
+סטטוס השיחה: פעילה
+======================================================================
+
+### אינטראקציה 1
+
+שאלת המשתמש (20/10/2026 12:28:26):
+מזהי ה-scope של המדיניות לעבודה (העבר אותם כפרמטרים לכלי GetAllocationPolicy, בקריאה אחת בלבד):
+ConnectionID: 98a4c446-f6ec-4b46-9062-d72a72b02bf2
+ConnectionType: 3
+השנה הנוכחית: 2026
+
+--------------------------------------------------
+הרצה 1 מתוך 1 | ניסיון: 1
+--------------------------------------------------
+הגדרות ההרצה:
+Provider Snapshot:
+{
+  "ProviderID": 1 // OpenAI,
+  "ModelName": "gpt-5.5",
+  "Parameters": null
+}
+Execution Snapshot:
+{
+  "Temperature": 0.2,
+  "MaxTokens": 20000,
+  "MaxIterations": 40,
+  "MaxToolCalls": 40,
+  "MaxUserMessageLength": null,
+  "StreamingPolicy": 1 // TextOnly,
+  "MaxCostPerConversation": null,
+  "MaxCostPerDay": null,
+  "MaxCostPerUser": null,
+  "Timeout": "00:05:00",
+  "AllowedToolIDs": [
+    "Ofek.AIAssistantTools.GetAllocationPolicyTool",
+    "Ofek.AIAssistantTools.WebSearchTool"
+  ]
+}
+
+קריאה לכלי #1 (איטרציה 1)
+שם הכלי: GetAllocationPolicy
+פרמטרי הקלט:
+{
+  "ConnectionID": "98a4c446-f6ec-4b46-9062-d72a72b02bf2",
+  "ConnectionType": 3
+}
+הפלט שהתקבל:
+{
+  "Profiles": [
+    {
+      "ProfileCode": 1,
+      "ProfileName": "שמרן",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 45
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 20
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 15
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 0,
+          "Max": 10
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 0,
+          "Max": 20
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 60
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 5,
+          "Max": 15
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    },
+    {
+      "ProfileCode": 2,
+      "ProfileName": "סולידי",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 55
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 15
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 10
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 0,
+          "Max": 20
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 0,
+          "Max": 20
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 60
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 5,
+          "Max": 15
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    },
+    {
+      "ProfileCode": 3,
+      "ProfileName": "מאוזן",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 60
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 13
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 7
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 15,
+          "Max": 35
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 40
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 60
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 10,
+          "Max": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    },
+    {
+      "ProfileCode": 4,
+      "ProfileName": "אוהב סיכונים",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 70
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 15
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 10
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 5
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 20,
+          "Max": 50
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 40
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 65
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 10,
+          "Max": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    },
+    {
+      "ProfileCode": 5,
+      "ProfileName": "צמא לסיכון קיצוני",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 80
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 10
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 8
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 2
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 50,
+          "Max": 100
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 40
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 75
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 10,
+          "Max": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    }
+  ]
+}
+
+קריאה לכלי #2 (איטרציה 2)
+שם הכלי: WebSearch
+פרמטרי הקלט:
+{
+  "Query": "Research year 2026. Find up to six candidate official publications, published in 2026 with a substantiated publication month, from only these institutions and official sites: Goldman Sachs am.gs.com, JPMorgan am.jpmorgan.com, BlackRock blackrock.com, Vanguard advisors.vanguard.com, Morgan Stanley morganstanley.com, UBS ubs.com, Citi privatebank.citibank.com, IMF imf.org, World Bank worldbank.org, OECD oecd.org. Accepted document types only: Capital Market Assumptions, Investment Outlook, Market Outlook, Strategic Asset Allocation, Asset Allocation Outlook, House View, or equivalent CIO research. The publication must contain an explicit strategic asset allocation recommendation to increase/decrease/overweight/underweight a broad asset class: public equity, cash strategic weight, alternatives, or real estate in portfolios. Exclude corporate capital actions, dividends, buybacks, CCAR, capital structure, company financials, investor relations, single security/product recommendations, marketing/education/personal finance, housing price forecasts without portfolio allocation, news, videos/social media, non-official sites, macro information alone, vague/tactical-only recommendations. Return only candidates that appear to meet all conditions; do not verify yet. For each candidate include exactly these content details: institution, document, publicationDate with year and month, officialDomain only, documentType, component (equity/cash/alternative/realEstate), direction (increase/decrease), evidence sentence describing the explicit allocation recommendation. Keep links separately from candidate records."
+}
+הפלט שהתקבל:
+(ריק)
+
+זמן ההרצה: 34.6 שניות (20/10/2026 12:28:26 - 20/10/2026 12:29:01)
+סטטוס: Completed
+שגיאות: אין
+
+תשובת הסוכן:
+(20/10/2026 12:29:01)
+הבחינה טרם ניתנת להשלמה: מבנה המדיניות הקיימת תקין, אך מחקר השוק לשנת 2026 לא הושלם ולכן אין לחשב או להציג הצעת שינוי.
+
+## מה כן התקבל ונבדק
+
+מדיניות האלוקציה כוללת את כל חמשת פרופילי הסיכון, ולכל פרופיל קיימים ארבעת רכיבי הפילוח הנדרשים:
+
+- שוק ההון
+- אלטרנטיבי
+- נדל״ן ללא מגורים
+- מזומנים
+
+בכל אחד מהפרופילים סכום הפילוח הוא **100%**, וטווחי החישוב הנדרשים קיימים עבור כל רכיב.
+
+## חריגות קיימות מול גבולות החישוב
+
+החריגות הבאות אינן פגם מבני, ולכן כשלעצמן אינן בסיס לשינוי; הן רק מגבלה שצריך היה לבדוק מול מחקר שוק מאומת:
+
+| פרופיל | רכיב | ערך קיים במדיניות | גבולות החישוב לפי המדיניות | סטטוס |
+|---|---:|---:|---:|---|
+| שמרן | אלטרנטיבי | 20% | 5%–15% | מעל הגבול |
+| סולידי | אלטרנטיבי | 20% | 5%–15% | מעל הגבול |
+| סולידי | מזומנים | 10% | 15%–25% | מתחת לגבול |
+| מאוזן | מזומנים | 7% | 15%–25% | מתחת לגבול |
+| אוהב סיכונים | שוק ההון | 70% | 35%–65% | מעל הגבול |
+| אוהב סיכונים | מזומנים | 5% | 15%–25% | מתחת לגבול |
+| צמא לסיכון קיצוני | שוק ההון | 80% | 35%–75% | מעל הגבול |
+| צמא לסיכון קיצוני | נדל״ן ללא מגורים | 8% | 10%–25% | מתחת לגבול |
+| צמא לסיכון קיצוני | מזומנים | 2% | 15%–25% | מתחת לגבול |
+
+## מגבלת הבחינה
+
+שלב איתור ואימות פרסומי המחקר לשנת **2026** לא הושלם, ולכן אין ראיות מאומתות ממוסדות מחקר קבילים לגבי כיוון הגדלה או הקטנה של רכיבי המדיניות.
+
+בהתאם לכללי הבחינה, בלי מחקר מאומת אין לקבוע כיווני שוק ואין לחשב הצעת שינוי למדיניות.
+
+======================================================================

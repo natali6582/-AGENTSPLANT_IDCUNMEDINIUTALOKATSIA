@@ -1,0 +1,2120 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Jerusalem",
+  "repository": "natali6582/-AGENTSPLANT_IDCUNMEDINIUTALOKATSIA",
+  "branch": "main",
+  "asOfRequest": "2026-10-20T14:15:24.732Z",
+  "finalChatTimestamp": "2026-10-20T13:23:44.441Z",
+  "iterationFolders": [
+    "out_20261020_allocation_cash_mapping_01",
+    "out_20261020_allocation_clarity_01",
+    "out_20261020_allocation_discovery_01",
+    "out_20261020_allocation_fix_01",
+    "out_20261020_allocation_neutrality_01",
+    "out_20261020_allocation_recovery_01",
+    "out_20261020_allocation_research_flow_01",
+    "out_20261020_allocation_v2_resave_01",
+    "out_20261020_allocation_verification_gate_01"
+  ],
+  "iterationFiles": 170,
+  "originalDocumentCount": 7,
+  "sessionExports": [
+    {
+      "sessionId": "01a15895-c95f-7be0-8c02-99a3a8f92c3b",
+      "source": "C:/Users/Nataliek/.codex/sessions/2026/10/20/rollout-2026-10-20T12-12-53-01a15895-c95f-7be0-8c02-99a3a8f92c3b.jsonl",
+      "messageCount": 123,
+      "asOfRequest": "2026-10-20T14:15:24.732Z"
+    },
+    {
+      "sessionId": "01a15956-2245-7a23-b1d0-c30aeba76a91",
+      "source": "C:/Users/Nataliek/.codex/sessions/2026/10/20/rollout-2026-10-20T15-42-59-01a15956-2245-7a23-b1d0-c30aeba76a91.jsonl",
+      "messageCount": 28,
+      "asOfRequest": "2026-10-20T14:15:24.732Z"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\node_modules",
+      "reason": "symbolic link or junction; external dependency runtime"
+    },
+    {
+      "source": "C:/Users/Nataliek/.codex/sessions/2026/10/14/rollout-2026-10-14T10-02-20-01a13938-19af-7201-918e-e1664685ebd8.jsonl",
+      "reason": "session modified on archive date, but contains no visible messages from that date"
+    }
+  ],
+  "validations": {
+    "exactFinalChatBlocks": true,
+    "calculationAlgorithmPreserved": true,
+    "researchWorkflowPreserved": true,
+    "generalInstructionsUnchanged": true,
+    "originalSourceFilesPreserved": true,
+    "repeatBuildsIdentical": true,
+    "liveSystemModified": false,
+    "liveAgentTested": false,
+    "promptRedesignedAfterTechnicalDocument": false
+  },
+  "manifestSelfHashExcluded": true,
+  "fileCountExcludingManifest": 198,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 108,
+      "sha256": "83cc50417aecb01eb90b60e7706fc473300e1342e40eab8d2264ecdc01578837"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3944,
+      "sha256": "5b7747094bc7d2488cba9a20109a0bc081c7e05d53dc05e0a09c6581fac5cb24"
+    },
+    {
+      "path": "TECHNICAL_CONTEXT.md",
+      "bytes": 5699,
+      "sha256": "e77216b699d29fa269dcf5cc87b6ea12007b82504b791e4185747fd1ce7101dd"
+    },
+    {
+      "path": "TOOLS_REVIEW.md",
+      "bytes": 3779,
+      "sha256": "3a9747151099186c69e9044e2f48ceb8deac743fcab41e05fa5c24df95d54f41"
+    },
+    {
+      "path": "before_delivery/תוכן הפרומפט מעודכן V2",
+      "bytes": 21741,
+      "sha256": "bb76a747b89121140c72bfd24dc68856c0a02123cdcafca3be03a2cf5f5b1da8"
+    },
+    {
+      "path": "conversations/01a15895-c95f-7be0-8c02-99a3a8f92c3b.json",
+      "bytes": 296009,
+      "sha256": "19f3a09d20f74e8571a7ea1d386d010f048d08165df881310f01f50c3c30dd22"
+    },
+    {
+      "path": "conversations/01a15895-c95f-7be0-8c02-99a3a8f92c3b.md",
+      "bytes": 286696,
+      "sha256": "92a8338307e045414bb8ae0d9d23f6f0f3a4ccf417d3a2febfda54830c65db43"
+    },
+    {
+      "path": "conversations/01a15956-2245-7a23-b1d0-c30aeba76a91.json",
+      "bytes": 143200,
+      "sha256": "de0ae8a1d2de541a05b7f3c745713ca70e761193563adfbcc91678eb82e3a588"
+    },
+    {
+      "path": "conversations/01a15956-2245-7a23-b1d0-c30aeba76a91.md",
+      "bytes": 140460,
+      "sha256": "86443d61ab4bfea5c93774ad9c82e0471a6c9189d74c9582705e6b4061c4d6e3"
+    },
+    {
+      "path": "final/GetAllocationPolicy_agent_addendum.txt",
+      "bytes": 2579,
+      "sha256": "d7cb9256d3f72f2479a0473969dbdb9b59ac41b96ff2857ef48b189fc3b31ae3"
+    },
+    {
+      "path": "final/WebSearch_agent_addendum.txt",
+      "bytes": 293,
+      "sha256": "742067ed02c20891ffebebabffca56ceadb0c9c562aba24251d1719c23d4a9a7"
+    },
+    {
+      "path": "final/agent_prompt.txt",
+      "bytes": 46519,
+      "sha256": "f6d4280c4c35a892fe4b85069ec1d4e4f79b5a813c673e839565024b30dbcb5d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/baseline.json",
+      "bytes": 4507,
+      "sha256": "2a20798f21900494c439ec3a265f8442ffde43259e05224c629be2e30eb51c29"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_a/GetAllocationPolicy V2.xlsx",
+      "bytes": 32358,
+      "sha256": "b33b00c061ac77f4c6ce3685905cefe586862e5c43cb2f0f655aeff6d70e5af5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_a/cells.diff",
+      "bytes": 3397,
+      "sha256": "97064c2a56decc4bae818af41d3e704c5fd556aa603a981a20424304f9bcae65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_a/verification.json",
+      "bytes": 661,
+      "sha256": "c40f3708b1b6c1404b6972834f5d28959e66828c041b1a16ac8884e613b2fa0f"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_b/GetAllocationPolicy V2.xlsx",
+      "bytes": 32358,
+      "sha256": "b33b00c061ac77f4c6ce3685905cefe586862e5c43cb2f0f655aeff6d70e5af5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_b/cells.diff",
+      "bytes": 3397,
+      "sha256": "97064c2a56decc4bae818af41d3e704c5fd556aa603a981a20424304f9bcae65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_b/verification.json",
+      "bytes": 661,
+      "sha256": "c40f3708b1b6c1404b6972834f5d28959e66828c041b1a16ac8884e613b2fa0f"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/component_addition.txt",
+      "bytes": 782,
+      "sha256": "c811587d592f95c2574e6aa2324ee0c9c3e5f21a96bcf623ec337cd7f2e77d66"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/deployment.json",
+      "bytes": 1260,
+      "sha256": "78ef06748db6b84bcd48514da7a608cde87ee94e900b1f32fe6b4238c608bd99"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/inputs/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/mapping_paragraph.txt",
+      "bytes": 1062,
+      "sha256": "dc8eaef43857c0bafe316be1b587b2366ec4df89c90c1966afa0bb192c85e0ee"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/update.py",
+      "bytes": 8981,
+      "sha256": "22e6c08c10b1dd9f582494f21c8e86830e7897ac1cbfc880f509a18887513b92"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/baseline.json",
+      "bytes": 4299,
+      "sha256": "0f9c503fb67d015e068c4ee00972b662d59ab43895d578d55a86e4ca7b769775"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/budget_rule.txt",
+      "bytes": 2582,
+      "sha256": "9f40a1712d33ebc44fdbd3eda4030a21181a87302876616b26f6545bef4613e5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build.py",
+      "bytes": 4354,
+      "sha256": "f567125936882f83ae35b719d85d7ab271a9caf6323dafef1a83f674983b732d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/WebSearch (1) V2.xlsx",
+      "bytes": 31974,
+      "sha256": "3f7e7ae48bfabe1401518e5096532464afcf54a20662fc1d5655e5d0732fd93e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/prompt.diff",
+      "bytes": 14381,
+      "sha256": "9ccedabef7c1fca6a6f2ebce94ecbaf079007e49f93cd952fbc57a1f680cbad3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/verification.json",
+      "bytes": 938,
+      "sha256": "b929dd53158b48baa9269ceaa900541f6c797230e1a675e17258de9064b53dc7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 30187,
+      "sha256": "2dde76aafc2a0caab3fa055965f96b1a12eb57a422fc052c2de66f4c5c51e393"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/WebSearch (1) V2.xlsx",
+      "bytes": 31974,
+      "sha256": "3f7e7ae48bfabe1401518e5096532464afcf54a20662fc1d5655e5d0732fd93e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/prompt.diff",
+      "bytes": 14381,
+      "sha256": "9ccedabef7c1fca6a6f2ebce94ecbaf079007e49f93cd952fbc57a1f680cbad3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/verification.json",
+      "bytes": 938,
+      "sha256": "b929dd53158b48baa9269ceaa900541f6c797230e1a675e17258de9064b53dc7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 30187,
+      "sha256": "2dde76aafc2a0caab3fa055965f96b1a12eb57a422fc052c2de66f4c5c51e393"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/cases_a.json",
+      "bytes": 1804,
+      "sha256": "aee48312789b6d6eb7af70dda0f78d42fe775f9f2d536c17d7df893d881faba5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/cases_b.json",
+      "bytes": 1804,
+      "sha256": "aee48312789b6d6eb7af70dda0f78d42fe775f9f2d536c17d7df893d881faba5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/deploy.py",
+      "bytes": 3250,
+      "sha256": "ecba044db0220fc1674a1b6d6a99e03e25270084b007580adb27bbc7931e8ad2"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/deployment.json",
+      "bytes": 2240,
+      "sha256": "16fc4fb7f2984e368ae0f0cad7030bf931a83cb61f2fd438e41b49187f41d5d7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/inputs/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/inputs/WebSearch (1) V2.xlsx",
+      "bytes": 31697,
+      "sha256": "12bf49d6d0c7bb71218beae77e98327cc7799a35c5ff40b6ddac74c8c28cf8c9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/inputs/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 27970,
+      "sha256": "41365ccdce724f04930d0df1144a961f336f59e82bb2ca18310417044e8d85f7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/prepare.py",
+      "bytes": 2326,
+      "sha256": "fbfe6487dce24e0bb31d4777461bc19682b1645ab88c1b4753a81aac6f76da03"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/search_addition.txt",
+      "bytes": 2651,
+      "sha256": "28585e56310a71af6c440734c458dbe5baa2eaeaa4b9aae1860f04dfe30afa36"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/verification_rule.txt",
+      "bytes": 1638,
+      "sha256": "eaa792694e1b1375cecd260e95dd05b86db3d5ef65d6f7e60839c3ab13838ea6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/verify_clarity.py",
+      "bytes": 5749,
+      "sha256": "98814d8f39011d591915060d4c2161bb2436594a9a628a4ae4056e53056055a4"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/baseline.json",
+      "bytes": 4293,
+      "sha256": "06edff587e4e00c32373f9e98e934293c7368fae71eef31be939dbd6ce0d38f1"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build.py",
+      "bytes": 3555,
+      "sha256": "3fd8aa105da626878dc77e03f87f97a25b0b2a6d551b6789f9beb0d632e6b277"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/WebSearch (1) V2.xlsx",
+      "bytes": 32270,
+      "sha256": "fc06519e7d1257a42765fad587f4137bca4c071b6462f76c7db81bed9c7f2eb6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/prompt.diff",
+      "bytes": 6751,
+      "sha256": "82838d2449dff9e1b44dd4dc8e98bbcc1438c29f95d04a3432f976ea8788e017"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/verification.json",
+      "bytes": 938,
+      "sha256": "f576580922cbdaa0a6ebe6af9041f6b767018a9dd65ae35b399961503652c4d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34467,
+      "sha256": "3f3e1b99d1e78601c3bf4f46513bad642ff04a118299bd75a4b3883053c7622d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/WebSearch (1) V2.xlsx",
+      "bytes": 32270,
+      "sha256": "fc06519e7d1257a42765fad587f4137bca4c071b6462f76c7db81bed9c7f2eb6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/prompt.diff",
+      "bytes": 6751,
+      "sha256": "82838d2449dff9e1b44dd4dc8e98bbcc1438c29f95d04a3432f976ea8788e017"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/verification.json",
+      "bytes": 938,
+      "sha256": "f576580922cbdaa0a6ebe6af9041f6b767018a9dd65ae35b399961503652c4d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34467,
+      "sha256": "3f3e1b99d1e78601c3bf4f46513bad642ff04a118299bd75a4b3883053c7622d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/cases_a.json",
+      "bytes": 1566,
+      "sha256": "ab41b7012b811fb310a97775899a4895dda7516196c36e32febb39a2576e0391"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/cases_b.json",
+      "bytes": 1566,
+      "sha256": "ab41b7012b811fb310a97775899a4895dda7516196c36e32febb39a2576e0391"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/deploy.py",
+      "bytes": 3250,
+      "sha256": "ecba044db0220fc1674a1b6d6a99e03e25270084b007580adb27bbc7931e8ad2"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/deployment.json",
+      "bytes": 2234,
+      "sha256": "7d857933fbc44ed20de5fe5b7eab1197d79a8ffa5d67d07fe1a3ee0a5e1f4249"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/discovery_guidance.txt",
+      "bytes": 4271,
+      "sha256": "9315440241609f2943b54bdf525e408f5f20fa5623dddc14704faf236b4faf6a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/inputs/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/inputs/WebSearch (1) V2.xlsx",
+      "bytes": 31974,
+      "sha256": "3f7e7ae48bfabe1401518e5096532464afcf54a20662fc1d5655e5d0732fd93e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/inputs/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 30187,
+      "sha256": "2dde76aafc2a0caab3fa055965f96b1a12eb57a422fc052c2de66f4c5c51e393"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/prepare.py",
+      "bytes": 2326,
+      "sha256": "fbfe6487dce24e0bb31d4777461bc19682b1645ab88c1b4753a81aac6f76da03"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/search_discovery_addition.txt",
+      "bytes": 1083,
+      "sha256": "a474a118532e67157e02d7333fbf923a3f091df3df7a7e685e6c8079277a0b88"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/verify_discovery.py",
+      "bytes": 7691,
+      "sha256": "b4057be89d53b0e417e2d5e8b194ef642dc2b88dcfa0f2cd02509e4665d8bb19"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/baseline.json",
+      "bytes": 3917,
+      "sha256": "b8cced4f1dcf55456e5ab5226fb311485e7bb5ff8aaeb11f89e415fb96de3385"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/WebSearch (1) V2.xlsx",
+      "bytes": 31671,
+      "sha256": "9b37f5646b1a9a16fc90015320bd2b7d096ca54c41ffffe15eead8e13773f49e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/prompt.diff",
+      "bytes": 19598,
+      "sha256": "8c89e8db59f9c7fe78e7cf74c9097ef653448920a0ef7fd3a33bf50b20103dce"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/verification.json",
+      "bytes": 994,
+      "sha256": "4f21ceccf65c51ea30f69f637dca34308f1034bdfb4e0a8b0e14ff69e0e1a6fb"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 25694,
+      "sha256": "2bd1d88382dc21148d5adc476521d224ebe1996dd123a4c9be8effae0a6c99ba"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/WebSearch (1) V2.xlsx",
+      "bytes": 31498,
+      "sha256": "f81133d66c3e4b1af5cd4da9f630068f8201ff66fa4f3372dc37ee52ff60080a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/prompt.diff",
+      "bytes": 19600,
+      "sha256": "1887aa288fe4f4dac4ec4ef873822f7a22bf0208925b3e4ec29537d04c0890ae"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/verification.json",
+      "bytes": 1025,
+      "sha256": "f09b227c0ac620ca9f77ca9e8ef28cd1dd0eba96b45ba75b8400471171016e98"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 25696,
+      "sha256": "755c0a24c6c5763ee945259cd58c16b57fe00e3c69fe165850f5cbe62ca8b6d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/WebSearch (1) V2.xlsx",
+      "bytes": 31498,
+      "sha256": "f81133d66c3e4b1af5cd4da9f630068f8201ff66fa4f3372dc37ee52ff60080a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/prompt.diff",
+      "bytes": 19600,
+      "sha256": "1887aa288fe4f4dac4ec4ef873822f7a22bf0208925b3e4ec29537d04c0890ae"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/verification.json",
+      "bytes": 1025,
+      "sha256": "f09b227c0ac620ca9f77ca9e8ef28cd1dd0eba96b45ba75b8400471171016e98"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 25696,
+      "sha256": "755c0a24c6c5763ee945259cd58c16b57fe00e3c69fe165850f5cbe62ca8b6d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/cases_a.json",
+      "bytes": 767,
+      "sha256": "f8a7d89d331989fab204a5b687933248284fffc48da3fa1c76639fb6937febe6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/cases_b.json",
+      "bytes": 767,
+      "sha256": "f8a7d89d331989fab204a5b687933248284fffc48da3fa1c76639fb6937febe6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/deploy.py",
+      "bytes": 3358,
+      "sha256": "1609eb8464d0694c224d91b2cca2dac88ffbee36a760bcd8b4654a2dca4b6141"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/deployment.json",
+      "bytes": 2559,
+      "sha256": "1c5f3c633bb5f112406ef813b898d3b76b46ebb3e806866ddfd3d57894c1dcd5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/inputs/GetAllocationPolicy V2.xlsx",
+      "bytes": 31665,
+      "sha256": "75a464a5a54b8612ba465a9ebf7637fad47c68042350eb2500895fdb7e0fd162"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/inputs/WebSearch (1) V2.xlsx",
+      "bytes": 31186,
+      "sha256": "569e76cd24e07c35ccaecb0c7101f3189a8b9c20e968daa623510a646dd5baa0"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/inputs/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 21838,
+      "sha256": "61dd42ec9ef424dd01a83ae4abad31d0c71a809bf4cda0d7968cb82e79599617"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/inspect.mjs",
+      "bytes": 957,
+      "sha256": "5a1d3a0dcc7f048d94e49861c2fc955999eb861b29a758cfb44d1420c3048369"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/policy_addition.txt",
+      "bytes": 2713,
+      "sha256": "f06a8e9b5b851ab6478f1ad5bd2c55b5bcfc4a43d7eb0d6aefa983060a7bbd3f"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/research_paragraph.txt",
+      "bytes": 1428,
+      "sha256": "b8bcc28688b75e9b748c22cd71840ac9cf23056e0141d3b6d3e47a15b6ab887d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/search_addition.txt",
+      "bytes": 996,
+      "sha256": "fdab69318f10798e9cc2c3669d7c52a56af7758f8ff44715c272999f96fbd7d7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/verify_cases.py",
+      "bytes": 6623,
+      "sha256": "dab9915abd7a9a549ebb6b7fdc6120d71347968b627acb6f35024e48c4c36be0"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/workflow_section.txt",
+      "bytes": 5303,
+      "sha256": "ae58d0aeef1ed42383f15bb181630c9a974d910416974fdbfde4bd16c5fcf54f"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/baseline.json",
+      "bytes": 3960,
+      "sha256": "3bda88c27d23ff266ff297dea4a4ef9aaf21f96d0befd4eeea792479591b5ed0"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_a/WebSearch (1) V2.xlsx",
+      "bytes": 32369,
+      "sha256": "6873800408417abf8b4cf9b4e9620a717942bff480ca3c63c3a554fce5388a12"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_a/prompt.diff",
+      "bytes": 4367,
+      "sha256": "64b90adf16b00b7a277e897a20d3516da85c32d3304133d648503c166a5243b6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_a/verification.json",
+      "bytes": 788,
+      "sha256": "fce93a1a8468723c69e178d3df02360f2501ad7135fd6f28ef20162de0202636"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_a/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34737,
+      "sha256": "e30b0b4cb1588b728fe8fef3a9e39861db211634e81c00f60f68e367ee3bf35d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_b/WebSearch (1) V2.xlsx",
+      "bytes": 32369,
+      "sha256": "6873800408417abf8b4cf9b4e9620a717942bff480ca3c63c3a554fce5388a12"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_b/prompt.diff",
+      "bytes": 4367,
+      "sha256": "64b90adf16b00b7a277e897a20d3516da85c32d3304133d648503c166a5243b6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_b/verification.json",
+      "bytes": 788,
+      "sha256": "fce93a1a8468723c69e178d3df02360f2501ad7135fd6f28ef20162de0202636"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_b/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34737,
+      "sha256": "e30b0b4cb1588b728fe8fef3a9e39861db211634e81c00f60f68e367ee3bf35d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/deployment.json",
+      "bytes": 1708,
+      "sha256": "0adc995f5dc446c0d713effd277daa6602bd6e9ce482628ff88288acf69e33d1"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/inputs/WebSearch (1) V2.xlsx",
+      "bytes": 32270,
+      "sha256": "fc06519e7d1257a42765fad587f4137bca4c071b6462f76c7db81bed9c7f2eb6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/inputs/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34467,
+      "sha256": "3f3e1b99d1e78601c3bf4f46513bad642ff04a118299bd75a4b3883053c7622d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/update.py",
+      "bytes": 8892,
+      "sha256": "9cad8920ea753137dabf7b6564b3ffc59686c4ed3bbb7296678169eb484e9c3a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/baseline.json",
+      "bytes": 4354,
+      "sha256": "fe5b451b3d3c08e899070351da4eeb1c5daafd93f3fc96029dd06728821e078d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build.py",
+      "bytes": 3188,
+      "sha256": "09d8e637ceced5c433d7b168da3ca94f16d4db3832cc9b171d3042837f8b8ff5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/WebSearch (1) V2.xlsx",
+      "bytes": 31697,
+      "sha256": "12bf49d6d0c7bb71218beae77e98327cc7799a35c5ff40b6ddac74c8c28cf8c9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/prompt.diff",
+      "bytes": 12649,
+      "sha256": "1101f19f15419a13e77028cbb79471887f6bd5254d86d82ef6f0ce74a9c71002"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/verification.json",
+      "bytes": 895,
+      "sha256": "199f4a6e7a21206bb18c9bc79a86aa40daf6b9e20f8ae1c847acf730abff0159"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 27970,
+      "sha256": "41365ccdce724f04930d0df1144a961f336f59e82bb2ca18310417044e8d85f7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/WebSearch (1) V2.xlsx",
+      "bytes": 31697,
+      "sha256": "12bf49d6d0c7bb71218beae77e98327cc7799a35c5ff40b6ddac74c8c28cf8c9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/prompt.diff",
+      "bytes": 12649,
+      "sha256": "1101f19f15419a13e77028cbb79471887f6bd5254d86d82ef6f0ce74a9c71002"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/verification.json",
+      "bytes": 895,
+      "sha256": "199f4a6e7a21206bb18c9bc79a86aa40daf6b9e20f8ae1c847acf730abff0159"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 27970,
+      "sha256": "41365ccdce724f04930d0df1144a961f336f59e82bb2ca18310417044e8d85f7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/cases_a.json",
+      "bytes": 2576,
+      "sha256": "0f576d8c6b769ebf4eafe7716bc401134155efb52608505d49313b243550beff"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/cases_b.json",
+      "bytes": 2576,
+      "sha256": "0f576d8c6b769ebf4eafe7716bc401134155efb52608505d49313b243550beff"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/deploy.py",
+      "bytes": 3282,
+      "sha256": "9eddd950b1da82779649843c0ae8bb8bff93898e332add1555ee235083b986e9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/deployment.json",
+      "bytes": 2261,
+      "sha256": "d15303f751a167b6feb3555c755635b3a6421162fdd970777bcd24f5305611e2"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/inputs/GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/inputs/WebSearch (1) V2.xlsx",
+      "bytes": 31498,
+      "sha256": "f81133d66c3e4b1af5cd4da9f630068f8201ff66fa4f3372dc37ee52ff60080a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/inputs/conversation.txt",
+      "bytes": 15240,
+      "sha256": "5a0bd51f00834baca722f2f29868def92b9b018f6cb998ccb42640280a17fc8e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/inputs/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 25696,
+      "sha256": "755c0a24c6c5763ee945259cd58c16b57fe00e3c69fe165850f5cbe62ca8b6d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/search_addition.txt",
+      "bytes": 1667,
+      "sha256": "8cf590f438c698929a122951b39404e960191ddf7e9d10c3db65513b05974162"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/verify_recovery.py",
+      "bytes": 6312,
+      "sha256": "e1431de3bba065550032eb62c9e83889cb60c02fbaf98364ee1c6ebcb108f629"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/workflow_section.txt",
+      "bytes": 7576,
+      "sha256": "981daf6769efe6af3d707f0aa3b1aa18272ac689ca74721053dd23d1f3381bb3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/baseline.json",
+      "bytes": 4581,
+      "sha256": "d62949a6aa1f308e36d9c5615030985d535da2ed2a735d5c725947874ec7948a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_a/WebSearch (1) V2.xlsx",
+      "bytes": 32832,
+      "sha256": "fbd20621ae4977e89ee0541efd6a29d06cde395f37bcaaebd7c4600809e9ed46"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_a/prompt.diff",
+      "bytes": 42564,
+      "sha256": "e82e6e64d282d3c0115a381c339061e6392df63124101c68bffb9b3f3c7f2b1e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_a/verification.json",
+      "bytes": 1004,
+      "sha256": "69e47d60c9ea4373170b8bf37430b3867e46477314d5a067f53a86f319043bb9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_a/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 38158,
+      "sha256": "31ff0c603c5850a5d8d5da9eeb3112fe02dcf5cacbd96fef6dd7f94a90858d65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_b/WebSearch (1) V2.xlsx",
+      "bytes": 32832,
+      "sha256": "fbd20621ae4977e89ee0541efd6a29d06cde395f37bcaaebd7c4600809e9ed46"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_b/prompt.diff",
+      "bytes": 42564,
+      "sha256": "e82e6e64d282d3c0115a381c339061e6392df63124101c68bffb9b3f3c7f2b1e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_b/verification.json",
+      "bytes": 1004,
+      "sha256": "69e47d60c9ea4373170b8bf37430b3867e46477314d5a067f53a86f319043bb9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_b/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 38158,
+      "sha256": "31ff0c603c5850a5d8d5da9eeb3112fe02dcf5cacbd96fef6dd7f94a90858d65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/deployment.json",
+      "bytes": 1822,
+      "sha256": "5ce7ec7117bead90550dce6d7ce27fd4a48f784525ba46d1e2f1c9e24a83d467"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/inputs/WebSearch (1) V2.xlsx",
+      "bytes": 32369,
+      "sha256": "6873800408417abf8b4cf9b4e9620a717942bff480ca3c63c3a554fce5388a12"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/inputs/פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34737,
+      "sha256": "e30b0b4cb1588b728fe8fef3a9e39861db211634e81c00f60f68e367ee3bf35d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/research_section.txt",
+      "bytes": 10010,
+      "sha256": "bd75ccb241850712b71385640e1bf8df5273327f95da282f0f65c3158f68e621"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/reuse_paragraph.txt",
+      "bytes": 1081,
+      "sha256": "9cb4b70a3c8520365fb59abe4cc1a323505cd29e4da06a109af3271ee68ac172"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/search_addition.txt",
+      "bytes": 5738,
+      "sha256": "5b428f2236fd20968e4fcc8116ea5cee9d12e7a4c71d1383626c7586ba4893a8"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/update.py",
+      "bytes": 13229,
+      "sha256": "ddf8c47b30f303645dda1eea20e85fc5a8de9daac4b7716d1a87459b8cb1f626"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/workflow_section.txt",
+      "bytes": 8065,
+      "sha256": "c0f09709ebe0f24114b56db94e331d4f9cb17316064d9c741f258f5ac3c1b62d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_v2_resave_01/resave.py",
+      "bytes": 3335,
+      "sha256": "56a9110d767efe03009fd9e8a5ce87564b741b70a6a3269fd671739dfd680a44"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_v2_resave_01/verification_a.json",
+      "bytes": 1463,
+      "sha256": "a59ed2f15607f748690c0d79eb29aa16ab034ef4da3510c78c95b531654a3c6c"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_v2_resave_01/verification_b.json",
+      "bytes": 1463,
+      "sha256": "a59ed2f15607f748690c0d79eb29aa16ab034ef4da3510c78c95b531654a3c6c"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/baseline.json",
+      "bytes": 6208,
+      "sha256": "c1775956c4bbd8f82251deb0805344858d238d86f45e3b7180ef41e0d2a52ac1"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_a/WebSearch (1) V2.xlsx",
+      "bytes": 33541,
+      "sha256": "76d3e1c66671e39e5cfa9be28d141d66238878dbe53fc6f383d7def74901ff44"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_a/prompt.diff",
+      "bytes": 23006,
+      "sha256": "2f1cffa86292a6538c6b4cc2d08327226106152642d2f9ec5a3a376ab323de22"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_a/verification.json",
+      "bytes": 1025,
+      "sha256": "13689f59bea25f3ccc12acbb7cbd0af7dc4d1fe92fffaa3fba57ea3b412b57f4"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_a/פרומפט עדכון אימות 20_10.txt",
+      "bytes": 42978,
+      "sha256": "1e0822fbf4af2427e61895e60bc59b7046bc150fd2b51f3df67861fd6341adfa"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_b/WebSearch (1) V2.xlsx",
+      "bytes": 33541,
+      "sha256": "76d3e1c66671e39e5cfa9be28d141d66238878dbe53fc6f383d7def74901ff44"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_b/prompt.diff",
+      "bytes": 23006,
+      "sha256": "2f1cffa86292a6538c6b4cc2d08327226106152642d2f9ec5a3a376ab323de22"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_b/verification.json",
+      "bytes": 1025,
+      "sha256": "13689f59bea25f3ccc12acbb7cbd0af7dc4d1fe92fffaa3fba57ea3b412b57f4"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_b/פרומפט עדכון אימות 20_10.txt",
+      "bytes": 42978,
+      "sha256": "1e0822fbf4af2427e61895e60bc59b7046bc150fd2b51f3df67861fd6341adfa"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/count_gate.txt",
+      "bytes": 522,
+      "sha256": "a1312b0618c2358fa74d834fa0836d2bb902bf9682694858116efd9bc91ea614"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/deployment.json",
+      "bytes": 1816,
+      "sha256": "c19dedda4abe66ab0e56423c4add5fedb0313eed25633a00a968e1a4c148ccdd"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/inputs/WebSearch (1) V2.xlsx",
+      "bytes": 32832,
+      "sha256": "fbd20621ae4977e89ee0541efd6a29d06cde395f37bcaaebd7c4600809e9ed46"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/inputs/פרומפט עדכון 14_15 20_10.txt",
+      "bytes": 38158,
+      "sha256": "31ff0c603c5850a5d8d5da9eeb3112fe02dcf5cacbd96fef6dd7f94a90858d65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/search_gate.txt",
+      "bytes": 2671,
+      "sha256": "c08d7a3a446fdece86a658b2c0bc6238ba3ebcb26cf7652d1dc48ebc8398ea05"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/step5.txt",
+      "bytes": 1108,
+      "sha256": "58de2fecc6b94a7ac1b3acbc57fbea27471b595e63d70a4d41563743fe19b41d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/step6.txt",
+      "bytes": 2276,
+      "sha256": "d034029b663bc65c13a7735ab5f09557919e3582a8e4522bf569e3ac5d98a695"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/update.py",
+      "bytes": 13854,
+      "sha256": "bf1ca48e4f819aed76ecbaeaf28346ebaf1cbb29a0deb4221df03e01ab37250b"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/verification_gate.txt",
+      "bytes": 3333,
+      "sha256": "d3bc3bb9513b7c2888f05e90ce17f1d5d403e5e0e3b800cdd87d781727a06cc0"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "logs/run_2026-10-20_14-50_completed_without_proposal.txt",
+      "bytes": 33018,
+      "sha256": "4899ba0c04c30e6beff9041b921c4d6f30df683ac309f3b95a77ce599a172bdf"
+    },
+    {
+      "path": "logs/run_2026-10-20_16-20_running_snapshot.txt",
+      "bytes": 1893,
+      "sha256": "ca50cbc83f6f6a5916073625c580ab8c5c8f45b3e7441f43b402ea2f3cf89134"
+    },
+    {
+      "path": "sources/GetAllocationPolicy.docx",
+      "bytes": 17927,
+      "sha256": "37e89773c9fbaca4be1ce6faf36ff9097529fd62071c09137179d47ae83e49d7"
+    },
+    {
+      "path": "sources/extracted/GetAllocationPolicy.txt",
+      "bytes": 5591,
+      "sha256": "728e48b5530dcf15a749df7488dfa56ada505d90e13b7c286c751f07b43dfbff"
+    },
+    {
+      "path": "sources/extracted/webserch.txt",
+      "bytes": 13665,
+      "sha256": "eb26a672d483c30010ebe22fa06919769b00d0a53bad751d22d2a6536b18c2f3"
+    },
+    {
+      "path": "sources/extracted/הנחיות כלליות.txt",
+      "bytes": 11551,
+      "sha256": "a6bebd99217c261064d349712928268c1c655de6dca767c339c2f7b0d2c108c7"
+    },
+    {
+      "path": "sources/extracted/כל הכלים.txt",
+      "bytes": 46479,
+      "sha256": "35aa7169c012d8645bac9622991d8a695b86b828af84e5a032b2eb750e872657"
+    },
+    {
+      "path": "sources/extracted/עדכון מדיניות וחשיפות- מידע טכני.txt",
+      "bytes": 57681,
+      "sha256": "db155d2bb743e4572e714d01aa23ce37441b3b959fdabe9a08a4b8327e83db8d"
+    },
+    {
+      "path": "sources/extracted/פרומפט אלו.txt",
+      "bytes": 43456,
+      "sha256": "3cbbaf73e969f310b703036ef46efff178a30d9489e324b155d5e0f8d4269262"
+    },
+    {
+      "path": "sources/extracted/שם הסוכן.txt",
+      "bytes": 36149,
+      "sha256": "87e996869f69e17d9a5e486d0a085064682816d0682aca1af2838dbd165514d8"
+    },
+    {
+      "path": "sources/webserch.docx",
+      "bytes": 17633,
+      "sha256": "00f70cf72a096ccb3d5f3554340e9c5164fe59897316f3e5a2ef78fa0a77318a"
+    },
+    {
+      "path": "sources/הנחיות כלליות.docx",
+      "bytes": 16725,
+      "sha256": "c7a79c5d07464a05dd91eeca9edd2dc6d63680acf427ba30e992011318f2701b"
+    },
+    {
+      "path": "sources/כל הכלים.docx",
+      "bytes": 151285,
+      "sha256": "5b54ec576382ad2db15e072802d3f8f4af0896139cd8b24e612993b10de852df"
+    },
+    {
+      "path": "sources/עדכון מדיניות וחשיפות- מידע טכני.docx",
+      "bytes": 79928,
+      "sha256": "3ef757d61742aed9413465e5a386f53fcc8d5942dd915f4f9f0767a03e8c3ce1"
+    },
+    {
+      "path": "sources/פרומפט אלו.docx",
+      "bytes": 27792,
+      "sha256": "f51c5b810857213b47bdb94f6b324cce9868a5ea61cab02597a3ce2a44d106ff"
+    },
+    {
+      "path": "sources/שם הסוכן.docx",
+      "bytes": 24289,
+      "sha256": "c905ad033d1f5b74c018e9e0c3dd323d505d57d1c168a7a1b44c4f5a2683f8e8"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "path": "before_delivery/תוכן הפרומפט מעודכן V2",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261011_122141_github_update\\history\\2026-10-20\\before_delivery\\תוכן הפרומפט מעודכן V2",
+      "bytes": 21741,
+      "sha256": "bb76a747b89121140c72bfd24dc68856c0a02123cdcafca3be03a2cf5f5b1da8"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/baseline.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\baseline.json",
+      "bytes": 4507,
+      "sha256": "2a20798f21900494c439ec3a265f8442ffde43259e05224c629be2e30eb51c29"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_a/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\build_a\\GetAllocationPolicy V2.xlsx",
+      "bytes": 32358,
+      "sha256": "b33b00c061ac77f4c6ce3685905cefe586862e5c43cb2f0f655aeff6d70e5af5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_a/cells.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\build_a\\cells.diff",
+      "bytes": 3397,
+      "sha256": "97064c2a56decc4bae818af41d3e704c5fd556aa603a981a20424304f9bcae65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\build_a\\verification.json",
+      "bytes": 661,
+      "sha256": "c40f3708b1b6c1404b6972834f5d28959e66828c041b1a16ac8884e613b2fa0f"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_b/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\build_b\\GetAllocationPolicy V2.xlsx",
+      "bytes": 32358,
+      "sha256": "b33b00c061ac77f4c6ce3685905cefe586862e5c43cb2f0f655aeff6d70e5af5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_b/cells.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\build_b\\cells.diff",
+      "bytes": 3397,
+      "sha256": "97064c2a56decc4bae818af41d3e704c5fd556aa603a981a20424304f9bcae65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/build_b/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\build_b\\verification.json",
+      "bytes": 661,
+      "sha256": "c40f3708b1b6c1404b6972834f5d28959e66828c041b1a16ac8884e613b2fa0f"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/component_addition.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\component_addition.txt",
+      "bytes": 782,
+      "sha256": "c811587d592f95c2574e6aa2324ee0c9c3e5f21a96bcf623ec337cd7f2e77d66"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/deployment.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\deployment.json",
+      "bytes": 1260,
+      "sha256": "78ef06748db6b84bcd48514da7a608cde87ee94e900b1f32fe6b4238c608bd99"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/inputs/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\inputs\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/mapping_paragraph.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\mapping_paragraph.txt",
+      "bytes": 1062,
+      "sha256": "dc8eaef43857c0bafe316be1b587b2366ec4df89c90c1966afa0bb192c85e0ee"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/update.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\update.py",
+      "bytes": 8981,
+      "sha256": "22e6c08c10b1dd9f582494f21c8e86830e7897ac1cbfc880f509a18887513b92"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_cash_mapping_01/xlsx_helpers.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_cash_mapping_01\\xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/baseline.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\baseline.json",
+      "bytes": 4299,
+      "sha256": "0f9c503fb67d015e068c4ee00972b662d59ab43895d578d55a86e4ca7b769775"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/budget_rule.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\budget_rule.txt",
+      "bytes": 2582,
+      "sha256": "9f40a1712d33ebc44fdbd3eda4030a21181a87302876616b26f6545bef4613e5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build.py",
+      "bytes": 4354,
+      "sha256": "f567125936882f83ae35b719d85d7ab271a9caf6323dafef1a83f674983b732d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_a\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_a\\WebSearch (1) V2.xlsx",
+      "bytes": 31974,
+      "sha256": "3f7e7ae48bfabe1401518e5096532464afcf54a20662fc1d5655e5d0732fd93e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_a\\prompt.diff",
+      "bytes": 14381,
+      "sha256": "9ccedabef7c1fca6a6f2ebce94ecbaf079007e49f93cd952fbc57a1f680cbad3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_a\\verification.json",
+      "bytes": 938,
+      "sha256": "b929dd53158b48baa9269ceaa900541f6c797230e1a675e17258de9064b53dc7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_a/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_a\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 30187,
+      "sha256": "2dde76aafc2a0caab3fa055965f96b1a12eb57a422fc052c2de66f4c5c51e393"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_b\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_b\\WebSearch (1) V2.xlsx",
+      "bytes": 31974,
+      "sha256": "3f7e7ae48bfabe1401518e5096532464afcf54a20662fc1d5655e5d0732fd93e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_b\\prompt.diff",
+      "bytes": 14381,
+      "sha256": "9ccedabef7c1fca6a6f2ebce94ecbaf079007e49f93cd952fbc57a1f680cbad3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_b\\verification.json",
+      "bytes": 938,
+      "sha256": "b929dd53158b48baa9269ceaa900541f6c797230e1a675e17258de9064b53dc7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/build_final_b/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\build_final_b\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 30187,
+      "sha256": "2dde76aafc2a0caab3fa055965f96b1a12eb57a422fc052c2de66f4c5c51e393"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/cases_a.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\cases_a.json",
+      "bytes": 1804,
+      "sha256": "aee48312789b6d6eb7af70dda0f78d42fe775f9f2d536c17d7df893d881faba5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/cases_b.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\cases_b.json",
+      "bytes": 1804,
+      "sha256": "aee48312789b6d6eb7af70dda0f78d42fe775f9f2d536c17d7df893d881faba5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/deploy.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\deploy.py",
+      "bytes": 3250,
+      "sha256": "ecba044db0220fc1674a1b6d6a99e03e25270084b007580adb27bbc7931e8ad2"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/deployment.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\deployment.json",
+      "bytes": 2240,
+      "sha256": "16fc4fb7f2984e368ae0f0cad7030bf931a83cb61f2fd438e41b49187f41d5d7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/inputs/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\inputs\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/inputs/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\inputs\\WebSearch (1) V2.xlsx",
+      "bytes": 31697,
+      "sha256": "12bf49d6d0c7bb71218beae77e98327cc7799a35c5ff40b6ddac74c8c28cf8c9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/inputs/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\inputs\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 27970,
+      "sha256": "41365ccdce724f04930d0df1144a961f336f59e82bb2ca18310417044e8d85f7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/prepare.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\prepare.py",
+      "bytes": 2326,
+      "sha256": "fbfe6487dce24e0bb31d4777461bc19682b1645ab88c1b4753a81aac6f76da03"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/search_addition.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\search_addition.txt",
+      "bytes": 2651,
+      "sha256": "28585e56310a71af6c440734c458dbe5baa2eaeaa4b9aae1860f04dfe30afa36"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/verification_rule.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\verification_rule.txt",
+      "bytes": 1638,
+      "sha256": "eaa792694e1b1375cecd260e95dd05b86db3d5ef65d6f7e60839c3ab13838ea6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/verify_clarity.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\verify_clarity.py",
+      "bytes": 5749,
+      "sha256": "98814d8f39011d591915060d4c2161bb2436594a9a628a4ae4056e53056055a4"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_clarity_01/xlsx_helpers.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_clarity_01\\xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/baseline.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\baseline.json",
+      "bytes": 4293,
+      "sha256": "06edff587e4e00c32373f9e98e934293c7368fae71eef31be939dbd6ce0d38f1"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build.py",
+      "bytes": 3555,
+      "sha256": "3fd8aa105da626878dc77e03f87f97a25b0b2a6d551b6789f9beb0d632e6b277"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_a\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_a\\WebSearch (1) V2.xlsx",
+      "bytes": 32270,
+      "sha256": "fc06519e7d1257a42765fad587f4137bca4c071b6462f76c7db81bed9c7f2eb6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_a\\prompt.diff",
+      "bytes": 6751,
+      "sha256": "82838d2449dff9e1b44dd4dc8e98bbcc1438c29f95d04a3432f976ea8788e017"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_a\\verification.json",
+      "bytes": 938,
+      "sha256": "f576580922cbdaa0a6ebe6af9041f6b767018a9dd65ae35b399961503652c4d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_a/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_a\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34467,
+      "sha256": "3f3e1b99d1e78601c3bf4f46513bad642ff04a118299bd75a4b3883053c7622d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_b\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_b\\WebSearch (1) V2.xlsx",
+      "bytes": 32270,
+      "sha256": "fc06519e7d1257a42765fad587f4137bca4c071b6462f76c7db81bed9c7f2eb6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_b\\prompt.diff",
+      "bytes": 6751,
+      "sha256": "82838d2449dff9e1b44dd4dc8e98bbcc1438c29f95d04a3432f976ea8788e017"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_b\\verification.json",
+      "bytes": 938,
+      "sha256": "f576580922cbdaa0a6ebe6af9041f6b767018a9dd65ae35b399961503652c4d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/build_final_b/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\build_final_b\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34467,
+      "sha256": "3f3e1b99d1e78601c3bf4f46513bad642ff04a118299bd75a4b3883053c7622d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/cases_a.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\cases_a.json",
+      "bytes": 1566,
+      "sha256": "ab41b7012b811fb310a97775899a4895dda7516196c36e32febb39a2576e0391"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/cases_b.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\cases_b.json",
+      "bytes": 1566,
+      "sha256": "ab41b7012b811fb310a97775899a4895dda7516196c36e32febb39a2576e0391"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/deploy.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\deploy.py",
+      "bytes": 3250,
+      "sha256": "ecba044db0220fc1674a1b6d6a99e03e25270084b007580adb27bbc7931e8ad2"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/deployment.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\deployment.json",
+      "bytes": 2234,
+      "sha256": "7d857933fbc44ed20de5fe5b7eab1197d79a8ffa5d67d07fe1a3ee0a5e1f4249"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/discovery_guidance.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\discovery_guidance.txt",
+      "bytes": 4271,
+      "sha256": "9315440241609f2943b54bdf525e408f5f20fa5623dddc14704faf236b4faf6a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/inputs/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\inputs\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/inputs/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\inputs\\WebSearch (1) V2.xlsx",
+      "bytes": 31974,
+      "sha256": "3f7e7ae48bfabe1401518e5096532464afcf54a20662fc1d5655e5d0732fd93e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/inputs/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\inputs\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 30187,
+      "sha256": "2dde76aafc2a0caab3fa055965f96b1a12eb57a422fc052c2de66f4c5c51e393"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/prepare.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\prepare.py",
+      "bytes": 2326,
+      "sha256": "fbfe6487dce24e0bb31d4777461bc19682b1645ab88c1b4753a81aac6f76da03"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/search_discovery_addition.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\search_discovery_addition.txt",
+      "bytes": 1083,
+      "sha256": "a474a118532e67157e02d7333fbf923a3f091df3df7a7e685e6c8079277a0b88"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/verify_discovery.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\verify_discovery.py",
+      "bytes": 7691,
+      "sha256": "b4057be89d53b0e417e2d5e8b194ef642dc2b88dcfa0f2cd02509e4665d8bb19"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_discovery_01/xlsx_helpers.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_discovery_01\\xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/baseline.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\baseline.json",
+      "bytes": 3917,
+      "sha256": "b8cced4f1dcf55456e5ab5226fb311485e7bb5ff8aaeb11f89e415fb96de3385"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_a\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_a\\WebSearch (1) V2.xlsx",
+      "bytes": 31671,
+      "sha256": "9b37f5646b1a9a16fc90015320bd2b7d096ca54c41ffffe15eead8e13773f49e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_a\\prompt.diff",
+      "bytes": 19598,
+      "sha256": "8c89e8db59f9c7fe78e7cf74c9097ef653448920a0ef7fd3a33bf50b20103dce"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_a\\verification.json",
+      "bytes": 994,
+      "sha256": "4f21ceccf65c51ea30f69f637dca34308f1034bdfb4e0a8b0e14ff69e0e1a6fb"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_a/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_a\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 25694,
+      "sha256": "2bd1d88382dc21148d5adc476521d224ebe1996dd123a4c9be8effae0a6c99ba"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_a\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_a\\WebSearch (1) V2.xlsx",
+      "bytes": 31498,
+      "sha256": "f81133d66c3e4b1af5cd4da9f630068f8201ff66fa4f3372dc37ee52ff60080a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_a\\prompt.diff",
+      "bytes": 19600,
+      "sha256": "1887aa288fe4f4dac4ec4ef873822f7a22bf0208925b3e4ec29537d04c0890ae"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_a\\verification.json",
+      "bytes": 1025,
+      "sha256": "f09b227c0ac620ca9f77ca9e8ef28cd1dd0eba96b45ba75b8400471171016e98"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_a/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_a\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 25696,
+      "sha256": "755c0a24c6c5763ee945259cd58c16b57fe00e3c69fe165850f5cbe62ca8b6d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_b\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_b\\WebSearch (1) V2.xlsx",
+      "bytes": 31498,
+      "sha256": "f81133d66c3e4b1af5cd4da9f630068f8201ff66fa4f3372dc37ee52ff60080a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_b\\prompt.diff",
+      "bytes": 19600,
+      "sha256": "1887aa288fe4f4dac4ec4ef873822f7a22bf0208925b3e4ec29537d04c0890ae"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_b\\verification.json",
+      "bytes": 1025,
+      "sha256": "f09b227c0ac620ca9f77ca9e8ef28cd1dd0eba96b45ba75b8400471171016e98"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/build_final_b/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\build_final_b\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 25696,
+      "sha256": "755c0a24c6c5763ee945259cd58c16b57fe00e3c69fe165850f5cbe62ca8b6d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/cases_a.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\cases_a.json",
+      "bytes": 767,
+      "sha256": "f8a7d89d331989fab204a5b687933248284fffc48da3fa1c76639fb6937febe6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/cases_b.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\cases_b.json",
+      "bytes": 767,
+      "sha256": "f8a7d89d331989fab204a5b687933248284fffc48da3fa1c76639fb6937febe6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/deploy.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\deploy.py",
+      "bytes": 3358,
+      "sha256": "1609eb8464d0694c224d91b2cca2dac88ffbee36a760bcd8b4654a2dca4b6141"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/deployment.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\deployment.json",
+      "bytes": 2559,
+      "sha256": "1c5f3c633bb5f112406ef813b898d3b76b46ebb3e806866ddfd3d57894c1dcd5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/inputs/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\inputs\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31665,
+      "sha256": "75a464a5a54b8612ba465a9ebf7637fad47c68042350eb2500895fdb7e0fd162"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/inputs/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\inputs\\WebSearch (1) V2.xlsx",
+      "bytes": 31186,
+      "sha256": "569e76cd24e07c35ccaecb0c7101f3189a8b9c20e968daa623510a646dd5baa0"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/inputs/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\inputs\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 21838,
+      "sha256": "61dd42ec9ef424dd01a83ae4abad31d0c71a809bf4cda0d7968cb82e79599617"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/inspect.mjs",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\inspect.mjs",
+      "bytes": 957,
+      "sha256": "5a1d3a0dcc7f048d94e49861c2fc955999eb861b29a758cfb44d1420c3048369"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/policy_addition.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\policy_addition.txt",
+      "bytes": 2713,
+      "sha256": "f06a8e9b5b851ab6478f1ad5bd2c55b5bcfc4a43d7eb0d6aefa983060a7bbd3f"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/research_paragraph.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\research_paragraph.txt",
+      "bytes": 1428,
+      "sha256": "b8bcc28688b75e9b748c22cd71840ac9cf23056e0141d3b6d3e47a15b6ab887d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/search_addition.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\search_addition.txt",
+      "bytes": 996,
+      "sha256": "fdab69318f10798e9cc2c3669d7c52a56af7758f8ff44715c272999f96fbd7d7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/verify_cases.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\verify_cases.py",
+      "bytes": 6623,
+      "sha256": "dab9915abd7a9a549ebb6b7fdc6120d71347968b627acb6f35024e48c4c36be0"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_fix_01/workflow_section.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_fix_01\\workflow_section.txt",
+      "bytes": 5303,
+      "sha256": "ae58d0aeef1ed42383f15bb181630c9a974d910416974fdbfde4bd16c5fcf54f"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/baseline.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\baseline.json",
+      "bytes": 3960,
+      "sha256": "3bda88c27d23ff266ff297dea4a4ef9aaf21f96d0befd4eeea792479591b5ed0"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_a/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\build_a\\WebSearch (1) V2.xlsx",
+      "bytes": 32369,
+      "sha256": "6873800408417abf8b4cf9b4e9620a717942bff480ca3c63c3a554fce5388a12"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_a/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\build_a\\prompt.diff",
+      "bytes": 4367,
+      "sha256": "64b90adf16b00b7a277e897a20d3516da85c32d3304133d648503c166a5243b6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\build_a\\verification.json",
+      "bytes": 788,
+      "sha256": "fce93a1a8468723c69e178d3df02360f2501ad7135fd6f28ef20162de0202636"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_a/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\build_a\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34737,
+      "sha256": "e30b0b4cb1588b728fe8fef3a9e39861db211634e81c00f60f68e367ee3bf35d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_b/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\build_b\\WebSearch (1) V2.xlsx",
+      "bytes": 32369,
+      "sha256": "6873800408417abf8b4cf9b4e9620a717942bff480ca3c63c3a554fce5388a12"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_b/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\build_b\\prompt.diff",
+      "bytes": 4367,
+      "sha256": "64b90adf16b00b7a277e897a20d3516da85c32d3304133d648503c166a5243b6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_b/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\build_b\\verification.json",
+      "bytes": 788,
+      "sha256": "fce93a1a8468723c69e178d3df02360f2501ad7135fd6f28ef20162de0202636"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/build_b/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\build_b\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34737,
+      "sha256": "e30b0b4cb1588b728fe8fef3a9e39861db211634e81c00f60f68e367ee3bf35d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/deployment.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\deployment.json",
+      "bytes": 1708,
+      "sha256": "0adc995f5dc446c0d713effd277daa6602bd6e9ce482628ff88288acf69e33d1"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/inputs/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\inputs\\WebSearch (1) V2.xlsx",
+      "bytes": 32270,
+      "sha256": "fc06519e7d1257a42765fad587f4137bca4c071b6462f76c7db81bed9c7f2eb6"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/inputs/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\inputs\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34467,
+      "sha256": "3f3e1b99d1e78601c3bf4f46513bad642ff04a118299bd75a4b3883053c7622d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/update.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\update.py",
+      "bytes": 8892,
+      "sha256": "9cad8920ea753137dabf7b6564b3ffc59686c4ed3bbb7296678169eb484e9c3a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_neutrality_01/xlsx_helpers.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_neutrality_01\\xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/baseline.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\baseline.json",
+      "bytes": 4354,
+      "sha256": "fe5b451b3d3c08e899070351da4eeb1c5daafd93f3fc96029dd06728821e078d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build.py",
+      "bytes": 3188,
+      "sha256": "09d8e637ceced5c433d7b168da3ca94f16d4db3832cc9b171d3042837f8b8ff5"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_a\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_a\\WebSearch (1) V2.xlsx",
+      "bytes": 31697,
+      "sha256": "12bf49d6d0c7bb71218beae77e98327cc7799a35c5ff40b6ddac74c8c28cf8c9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_a\\prompt.diff",
+      "bytes": 12649,
+      "sha256": "1101f19f15419a13e77028cbb79471887f6bd5254d86d82ef6f0ce74a9c71002"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_a\\verification.json",
+      "bytes": 895,
+      "sha256": "199f4a6e7a21206bb18c9bc79a86aa40daf6b9e20f8ae1c847acf730abff0159"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_a/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_a\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 27970,
+      "sha256": "41365ccdce724f04930d0df1144a961f336f59e82bb2ca18310417044e8d85f7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_b\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_b\\WebSearch (1) V2.xlsx",
+      "bytes": 31697,
+      "sha256": "12bf49d6d0c7bb71218beae77e98327cc7799a35c5ff40b6ddac74c8c28cf8c9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_b\\prompt.diff",
+      "bytes": 12649,
+      "sha256": "1101f19f15419a13e77028cbb79471887f6bd5254d86d82ef6f0ce74a9c71002"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_b\\verification.json",
+      "bytes": 895,
+      "sha256": "199f4a6e7a21206bb18c9bc79a86aa40daf6b9e20f8ae1c847acf730abff0159"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/build_final_b/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\build_final_b\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 27970,
+      "sha256": "41365ccdce724f04930d0df1144a961f336f59e82bb2ca18310417044e8d85f7"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/cases_a.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\cases_a.json",
+      "bytes": 2576,
+      "sha256": "0f576d8c6b769ebf4eafe7716bc401134155efb52608505d49313b243550beff"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/cases_b.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\cases_b.json",
+      "bytes": 2576,
+      "sha256": "0f576d8c6b769ebf4eafe7716bc401134155efb52608505d49313b243550beff"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/deploy.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\deploy.py",
+      "bytes": 3282,
+      "sha256": "9eddd950b1da82779649843c0ae8bb8bff93898e332add1555ee235083b986e9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/deployment.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\deployment.json",
+      "bytes": 2261,
+      "sha256": "d15303f751a167b6feb3555c755635b3a6421162fdd970777bcd24f5305611e2"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/inputs/GetAllocationPolicy V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\inputs\\GetAllocationPolicy V2.xlsx",
+      "bytes": 31979,
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/inputs/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\inputs\\WebSearch (1) V2.xlsx",
+      "bytes": 31498,
+      "sha256": "f81133d66c3e4b1af5cd4da9f630068f8201ff66fa4f3372dc37ee52ff60080a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/inputs/conversation.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\inputs\\conversation.txt",
+      "bytes": 15240,
+      "sha256": "5a0bd51f00834baca722f2f29868def92b9b018f6cb998ccb42640280a17fc8e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/inputs/פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\inputs\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "bytes": 25696,
+      "sha256": "755c0a24c6c5763ee945259cd58c16b57fe00e3c69fe165850f5cbe62ca8b6d3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/search_addition.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\search_addition.txt",
+      "bytes": 1667,
+      "sha256": "8cf590f438c698929a122951b39404e960191ddf7e9d10c3db65513b05974162"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/verify_recovery.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\verify_recovery.py",
+      "bytes": 6312,
+      "sha256": "e1431de3bba065550032eb62c9e83889cb60c02fbaf98364ee1c6ebcb108f629"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/workflow_section.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\workflow_section.txt",
+      "bytes": 7576,
+      "sha256": "981daf6769efe6af3d707f0aa3b1aa18272ac689ca74721053dd23d1f3381bb3"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_recovery_01/xlsx_helpers.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_recovery_01\\xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/baseline.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\baseline.json",
+      "bytes": 4581,
+      "sha256": "d62949a6aa1f308e36d9c5615030985d535da2ed2a735d5c725947874ec7948a"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_a/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\build_a\\WebSearch (1) V2.xlsx",
+      "bytes": 32832,
+      "sha256": "fbd20621ae4977e89ee0541efd6a29d06cde395f37bcaaebd7c4600809e9ed46"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_a/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\build_a\\prompt.diff",
+      "bytes": 42564,
+      "sha256": "e82e6e64d282d3c0115a381c339061e6392df63124101c68bffb9b3f3c7f2b1e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\build_a\\verification.json",
+      "bytes": 1004,
+      "sha256": "69e47d60c9ea4373170b8bf37430b3867e46477314d5a067f53a86f319043bb9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_a/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\build_a\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 38158,
+      "sha256": "31ff0c603c5850a5d8d5da9eeb3112fe02dcf5cacbd96fef6dd7f94a90858d65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_b/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\build_b\\WebSearch (1) V2.xlsx",
+      "bytes": 32832,
+      "sha256": "fbd20621ae4977e89ee0541efd6a29d06cde395f37bcaaebd7c4600809e9ed46"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_b/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\build_b\\prompt.diff",
+      "bytes": 42564,
+      "sha256": "e82e6e64d282d3c0115a381c339061e6392df63124101c68bffb9b3f3c7f2b1e"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_b/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\build_b\\verification.json",
+      "bytes": 1004,
+      "sha256": "69e47d60c9ea4373170b8bf37430b3867e46477314d5a067f53a86f319043bb9"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/build_b/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\build_b\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 38158,
+      "sha256": "31ff0c603c5850a5d8d5da9eeb3112fe02dcf5cacbd96fef6dd7f94a90858d65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/deployment.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\deployment.json",
+      "bytes": 1822,
+      "sha256": "5ce7ec7117bead90550dce6d7ce27fd4a48f784525ba46d1e2f1c9e24a83d467"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/inputs/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\inputs\\WebSearch (1) V2.xlsx",
+      "bytes": 32369,
+      "sha256": "6873800408417abf8b4cf9b4e9620a717942bff480ca3c63c3a554fce5388a12"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/inputs/פרומפט עדכון 12_57 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\inputs\\פרומפט עדכון 12_57 20_10.txt",
+      "bytes": 34737,
+      "sha256": "e30b0b4cb1588b728fe8fef3a9e39861db211634e81c00f60f68e367ee3bf35d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/research_section.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\research_section.txt",
+      "bytes": 10010,
+      "sha256": "bd75ccb241850712b71385640e1bf8df5273327f95da282f0f65c3158f68e621"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/reuse_paragraph.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\reuse_paragraph.txt",
+      "bytes": 1081,
+      "sha256": "9cb4b70a3c8520365fb59abe4cc1a323505cd29e4da06a109af3271ee68ac172"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/search_addition.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\search_addition.txt",
+      "bytes": 5738,
+      "sha256": "5b428f2236fd20968e4fcc8116ea5cee9d12e7a4c71d1383626c7586ba4893a8"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/update.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\update.py",
+      "bytes": 13229,
+      "sha256": "ddf8c47b30f303645dda1eea20e85fc5a8de9daac4b7716d1a87459b8cb1f626"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/workflow_section.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\workflow_section.txt",
+      "bytes": 8065,
+      "sha256": "c0f09709ebe0f24114b56db94e331d4f9cb17316064d9c741f258f5ac3c1b62d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_research_flow_01/xlsx_helpers.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_research_flow_01\\xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_v2_resave_01/resave.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_v2_resave_01\\resave.py",
+      "bytes": 3335,
+      "sha256": "56a9110d767efe03009fd9e8a5ce87564b741b70a6a3269fd671739dfd680a44"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_v2_resave_01/verification_a.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_v2_resave_01\\verification_a.json",
+      "bytes": 1463,
+      "sha256": "a59ed2f15607f748690c0d79eb29aa16ab034ef4da3510c78c95b531654a3c6c"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_v2_resave_01/verification_b.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_v2_resave_01\\verification_b.json",
+      "bytes": 1463,
+      "sha256": "a59ed2f15607f748690c0d79eb29aa16ab034ef4da3510c78c95b531654a3c6c"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/baseline.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\baseline.json",
+      "bytes": 6208,
+      "sha256": "c1775956c4bbd8f82251deb0805344858d238d86f45e3b7180ef41e0d2a52ac1"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_a/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\build_a\\WebSearch (1) V2.xlsx",
+      "bytes": 33541,
+      "sha256": "76d3e1c66671e39e5cfa9be28d141d66238878dbe53fc6f383d7def74901ff44"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_a/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\build_a\\prompt.diff",
+      "bytes": 23006,
+      "sha256": "2f1cffa86292a6538c6b4cc2d08327226106152642d2f9ec5a3a376ab323de22"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_a/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\build_a\\verification.json",
+      "bytes": 1025,
+      "sha256": "13689f59bea25f3ccc12acbb7cbd0af7dc4d1fe92fffaa3fba57ea3b412b57f4"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_a/פרומפט עדכון אימות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\build_a\\פרומפט עדכון אימות 20_10.txt",
+      "bytes": 42978,
+      "sha256": "1e0822fbf4af2427e61895e60bc59b7046bc150fd2b51f3df67861fd6341adfa"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_b/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\build_b\\WebSearch (1) V2.xlsx",
+      "bytes": 33541,
+      "sha256": "76d3e1c66671e39e5cfa9be28d141d66238878dbe53fc6f383d7def74901ff44"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_b/prompt.diff",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\build_b\\prompt.diff",
+      "bytes": 23006,
+      "sha256": "2f1cffa86292a6538c6b4cc2d08327226106152642d2f9ec5a3a376ab323de22"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_b/verification.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\build_b\\verification.json",
+      "bytes": 1025,
+      "sha256": "13689f59bea25f3ccc12acbb7cbd0af7dc4d1fe92fffaa3fba57ea3b412b57f4"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/build_b/פרומפט עדכון אימות 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\build_b\\פרומפט עדכון אימות 20_10.txt",
+      "bytes": 42978,
+      "sha256": "1e0822fbf4af2427e61895e60bc59b7046bc150fd2b51f3df67861fd6341adfa"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/count_gate.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\count_gate.txt",
+      "bytes": 522,
+      "sha256": "a1312b0618c2358fa74d834fa0836d2bb902bf9682694858116efd9bc91ea614"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/deployment.json",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\deployment.json",
+      "bytes": 1816,
+      "sha256": "c19dedda4abe66ab0e56423c4add5fedb0313eed25633a00a968e1a4c148ccdd"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/inputs/WebSearch (1) V2.xlsx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\inputs\\WebSearch (1) V2.xlsx",
+      "bytes": 32832,
+      "sha256": "fbd20621ae4977e89ee0541efd6a29d06cde395f37bcaaebd7c4600809e9ed46"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/inputs/פרומפט עדכון 14_15 20_10.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\inputs\\פרומפט עדכון 14_15 20_10.txt",
+      "bytes": 38158,
+      "sha256": "31ff0c603c5850a5d8d5da9eeb3112fe02dcf5cacbd96fef6dd7f94a90858d65"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/search_gate.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\search_gate.txt",
+      "bytes": 2671,
+      "sha256": "c08d7a3a446fdece86a658b2c0bc6238ba3ebcb26cf7652d1dc48ebc8398ea05"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/step5.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\step5.txt",
+      "bytes": 1108,
+      "sha256": "58de2fecc6b94a7ac1b3acbc57fbea27471b595e63d70a4d41563743fe19b41d"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/step6.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\step6.txt",
+      "bytes": 2276,
+      "sha256": "d034029b663bc65c13a7735ab5f09557919e3582a8e4522bf569e3ac5d98a695"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/update.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\update.py",
+      "bytes": 13854,
+      "sha256": "bf1ca48e4f819aed76ecbaeaf28346ebaf1cbb29a0deb4221df03e01ab37250b"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/verification_gate.txt",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\verification_gate.txt",
+      "bytes": 3333,
+      "sha256": "d3bc3bb9513b7c2888f05e90ce17f1d5d403e5e0e3b800cdd87d781727a06cc0"
+    },
+    {
+      "path": "iterations/out_20261020_allocation_verification_gate_01/xlsx_helpers.py",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\מסמכים\\ChatGPT\\מדיניות אלוקציה\\out_20261020_allocation_verification_gate_01\\xlsx_helpers.py",
+      "bytes": 14150,
+      "sha256": "b2b7f7094a5f5b1163162b9aa37cdaed9a5bd372347ee048b98925b6d35fb588"
+    },
+    {
+      "path": "sources/שם הסוכן.docx",
+      "source": "C:\\Users\\Nataliek\\Downloads\\שם הסוכן.docx",
+      "bytes": 24289,
+      "sha256": "c905ad033d1f5b74c018e9e0c3dd323d505d57d1c168a7a1b44c4f5a2683f8e8"
+    },
+    {
+      "path": "sources/הנחיות כלליות.docx",
+      "source": "C:\\Users\\Nataliek\\Downloads\\הנחיות כלליות.docx",
+      "bytes": 16725,
+      "sha256": "c7a79c5d07464a05dd91eeca9edd2dc6d63680acf427ba30e992011318f2701b"
+    },
+    {
+      "path": "sources/פרומפט אלו.docx",
+      "source": "C:\\Users\\Nataliek\\Downloads\\פרומפט אלו.docx",
+      "bytes": 27792,
+      "sha256": "f51c5b810857213b47bdb94f6b324cce9868a5ea61cab02597a3ce2a44d106ff"
+    },
+    {
+      "path": "sources/webserch.docx",
+      "source": "C:\\Users\\Nataliek\\Downloads\\webserch.docx",
+      "bytes": 17633,
+      "sha256": "00f70cf72a096ccb3d5f3554340e9c5164fe59897316f3e5a2ef78fa0a77318a"
+    },
+    {
+      "path": "sources/GetAllocationPolicy.docx",
+      "source": "C:\\Users\\Nataliek\\Downloads\\GetAllocationPolicy.docx",
+      "bytes": 17927,
+      "sha256": "37e89773c9fbaca4be1ce6faf36ff9097529fd62071c09137179d47ae83e49d7"
+    },
+    {
+      "path": "sources/כל הכלים.docx",
+      "source": "C:\\Users\\Nataliek\\OneDrive - דה סרוויס תכנון פיננסי (אף.פי) בע מ\\שולחן העבודה\\סוכנים כללי\\כלים של סוכנים\\כל הכלים.docx",
+      "bytes": 151285,
+      "sha256": "5b54ec576382ad2db15e072802d3f8f4af0896139cd8b24e612993b10de852df"
+    },
+    {
+      "path": "sources/עדכון מדיניות וחשיפות- מידע טכני.docx",
+      "source": "C:\\Users\\Nataliek\\Downloads\\עדכון מדיניות וחשיפות- מידע טכני.docx",
+      "bytes": 79928,
+      "sha256": "3ef757d61742aed9413465e5a386f53fcc8d5942dd915f4f9f0767a03e8c3ce1"
+    }
+  ]
+}

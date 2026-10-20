@@ -1,0 +1,37 @@
+[
+  {
+    "file": "פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+    "sha256": "2bd1d88382dc21148d5adc476521d224ebe1996dd123a4c9be8effae0a6c99ba",
+    "encoding_and_line_endings_preserved": true
+  },
+  {
+    "file": "GetAllocationPolicy V2.xlsx",
+    "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9",
+    "changed_cells": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ],
+    "sheet_count": 60,
+    "changed_package_parts": [
+      "xl/sharedStrings.xml"
+    ],
+    "non_target_cells_and_properties_unchanged": true
+  },
+  {
+    "file": "WebSearch (1) V2.xlsx",
+    "sha256": "9b37f5646b1a9a16fc90015320bd2b7d096ca54c41ffffe15eead8e13773f49e",
+    "changed_cells": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ],
+    "sheet_count": 60,
+    "changed_package_parts": [
+      "xl/worksheets/sheet1.xml"
+    ],
+    "non_target_cells_and_properties_unchanged": true
+  }
+]

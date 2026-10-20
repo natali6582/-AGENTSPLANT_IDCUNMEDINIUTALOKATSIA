@@ -1,0 +1,31 @@
+[
+  {
+    "file": "פרומפט עדכון 12_57 20_10.txt",
+    "sha256": "3f3e1b99d1e78601c3bf4f46513bad642ff04a118299bd75a4b3883053c7622d",
+    "added_section": "מיקוד שלב האיתור",
+    "all_existing_prompt_text_unchanged": true,
+    "call_budget_recovery_verification_and_calculation_rules_unchanged": true
+  },
+  {
+    "file": "GetAllocationPolicy V2.xlsx",
+    "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9",
+    "changed_cells": [],
+    "sheet_count": 60,
+    "byte_identical_to_source": true
+  },
+  {
+    "file": "WebSearch (1) V2.xlsx",
+    "sha256": "fc06519e7d1257a42765fad587f4137bca4c071b6462f76c7db81bed9c7f2eb6",
+    "changed_cells": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ],
+    "sheet_count": 60,
+    "changed_package_parts": [
+      "xl/sharedStrings.xml"
+    ],
+    "non_target_cells_and_properties_unchanged": true
+  }
+]

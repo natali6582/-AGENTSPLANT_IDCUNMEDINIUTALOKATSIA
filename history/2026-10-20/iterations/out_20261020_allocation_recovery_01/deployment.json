@@ -1,0 +1,35 @@
+{
+  "backup": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\ישן\\גיבוי_20261020_התאוששות_V2_01",
+  "changed_workbook_cells": {
+    "WebSearch (1) V2.xlsx": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ]
+  },
+  "files": [
+    {
+      "changed_from_baseline": true,
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "sha256": "41365ccdce724f04930d0df1144a961f336f59e82bb2ca18310417044e8d85f7"
+    },
+    {
+      "changed_from_baseline": false,
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\GetAllocationPolicy V2.xlsx",
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "changed_from_baseline": true,
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\WebSearch (1) V2.xlsx",
+      "sha256": "12bf49d6d0c7bb71218beae77e98327cc7799a35c5ff40b6ddac74c8c28cf8c9"
+    }
+  ],
+  "imported_into_live_system": false,
+  "live_agent_tested": false,
+  "protected_files_unchanged": 6,
+  "repeat_build_and_case_reports_byte_identical": true,
+  "static_scenarios_passed": 11,
+  "visual_preview": "Existing import-format Artifact Tool limitation; package preservation verified",
+  "workbook_sheets_styles_and_other_cells_unchanged": true
+}

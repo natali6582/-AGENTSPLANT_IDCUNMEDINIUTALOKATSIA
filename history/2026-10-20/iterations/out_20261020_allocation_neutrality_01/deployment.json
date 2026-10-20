@@ -1,0 +1,27 @@
+{
+  "backup": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\ישן\\גיבוי_20261020_ניטרליות_אימות_V2_01",
+  "budget_recovery_and_verification_rules_unchanged": true,
+  "changed_workbook_cells": [
+    [
+      "מידע כללי",
+      "F2"
+    ]
+  ],
+  "imported_into_live_system": false,
+  "live_agent_tested": false,
+  "only_approved_addition_in_each_target": true,
+  "protected_files_unchanged": 6,
+  "repeat_builds_byte_identical": true,
+  "saved": [
+    {
+      "path": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\פרומפט עדכון 12_57 20_10.txt",
+      "sha256": "e30b0b4cb1588b728fe8fef3a9e39861db211634e81c00f60f68e367ee3bf35d"
+    },
+    {
+      "path": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\WebSearch (1) V2.xlsx",
+      "sha256": "6873800408417abf8b4cf9b4e9620a717942bff480ca3c63c3a554fce5388a12"
+    }
+  ],
+  "visual_preview": "Existing import-format Artifact Tool limitation; unchanged package layout verified",
+  "workbook_sheet_count": 60
+}

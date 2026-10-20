@@ -1,0 +1,47 @@
+{
+  "backup": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\ישן\\גיבוי_20261020_תיקון_בחינה_V2_01",
+  "case_reports_byte_identical": true,
+  "deployed": [
+    {
+      "path": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "sha256": "755c0a24c6c5763ee945259cd58c16b57fe00e3c69fe165850f5cbe62ca8b6d3"
+    },
+    {
+      "path": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\GetAllocationPolicy V2.xlsx",
+      "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9"
+    },
+    {
+      "path": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\WebSearch (1) V2.xlsx",
+      "sha256": "f81133d66c3e4b1af5cd4da9f630068f8201ff66fa4f3372dc37ee52ff60080a"
+    }
+  ],
+  "found_not_fixed": "Existing duplicated AllocationPolicyUpdateAgent@v version prefix is unchanged; runtime effect not established",
+  "imported_into_live_system": false,
+  "live_agent_tested": false,
+  "preview": "Original import-format workbook cannot be loaded by Artifact Tool: Arg_NullReferenceException",
+  "protected_files_unchanged": 5,
+  "repeat_build_byte_identical": true,
+  "static_case_count": 9,
+  "workbook_changes": [
+    {
+      "cells": [
+        [
+          "מידע כללי",
+          "F2"
+        ]
+      ],
+      "file": "GetAllocationPolicy V2.xlsx",
+      "sheets": 60
+    },
+    {
+      "cells": [
+        [
+          "מידע כללי",
+          "F2"
+        ]
+      ],
+      "file": "WebSearch (1) V2.xlsx",
+      "sheets": 60
+    }
+  ]
+}

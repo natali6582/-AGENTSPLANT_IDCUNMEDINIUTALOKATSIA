@@ -1,0 +1,30 @@
+[
+  {
+    "allocation_algorithm_and_business_output_byte_unchanged": true,
+    "budget_history_and_counting_rules_unchanged": true,
+    "encoding_and_line_endings_preserved": true,
+    "file": "פרומפט עדכון אימות 20_10.txt",
+    "no_empty_candidate_verification": true,
+    "only_verification_gate_steps_5_6_and_count_gate_changed": true,
+    "original_whitelist_unchanged": true,
+    "partial_candidates_require_full_final_verification": true,
+    "sha256": "1e0822fbf4af2427e61895e60bc59b7046bc150fd2b51f3df67861fd6341adfa"
+  },
+  {
+    "changed_cells": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ],
+    "changed_package_parts": [
+      "xl/sharedStrings.xml"
+    ],
+    "file": "WebSearch (1) V2.xlsx",
+    "non_target_cells_and_properties_unchanged": true,
+    "only_agent_specific_addition_updated": true,
+    "sha256": "76d3e1c66671e39e5cfa9be28d141d66238878dbe53fc6f383d7def74901ff44",
+    "sheet_count": 60,
+    "tool_return_contract_and_shared_descriptions_unchanged": true
+  }
+]

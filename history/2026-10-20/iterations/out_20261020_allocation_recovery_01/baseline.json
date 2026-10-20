@@ -1,0 +1,46 @@
+{
+  "targets": [
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "name": "פרומפט מלא- תוספת להנחיות הכלליות 20_10.txt",
+      "sha256": "755C0A24C6C5763EE945259CD58C16B57FE00E3C69FE165850F5CBE62CA8B6D3"
+    },
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\GetAllocationPolicy V2.xlsx",
+      "name": "GetAllocationPolicy V2.xlsx",
+      "sha256": "ACD66C5F9BF109FE7F4EDC8199289AFEA4DFDEEF3CE85419DC19A3BB5112BFD9"
+    },
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\WebSearch (1) V2.xlsx",
+      "name": "WebSearch (1) V2.xlsx",
+      "sha256": "F81133D66C3E4B1AF5CD4DA9F630068F8201FF66FA4F3372DC37EE52FF60080A"
+    }
+  ],
+  "protected": [
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\GetAllocationPolicy.xlsx",
+      "sha256": "AE24BB8B42367C65B8E464D8187FA43AB9FC1A0A779CDED590A16DD5FD5BF453"
+    },
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\WebSearch.xlsx",
+      "sha256": "19B354C58E98588D84A0DFF39AB11EFC98D98D644101C6F47F26007348EEE5A0"
+    },
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\הנחיות כלליות לאחר שינוי גרסה.docx",
+      "sha256": "E683B15B0EA8646F86FC10352A7F8BCC9CA0A85DC70D7501A2065AA6EE308A08"
+    },
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\GetAllocationPolicy.xlsx",
+      "sha256": "75A464A5A54B8612BA465A9EBF7637FAD47C68042350EB2500895FDB7E0FD162"
+    },
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\WebSearch (1).xlsx",
+      "sha256": "21F77DC8BEF0AEEE912B4A9B94E770F0878E3BD1B01488A1849770C097D48C92"
+    },
+    {
+      "path": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\GetAllocationPolicy V2.xlsx",
+      "sha256": "ACD66C5F9BF109FE7F4EDC8199289AFEA4DFDEEF3CE85419DC19A3BB5112BFD9"
+    }
+  ],
+  "backup": "S:\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\ישן\\גיבוי_20261020_התאוששות_V2_01"
+}

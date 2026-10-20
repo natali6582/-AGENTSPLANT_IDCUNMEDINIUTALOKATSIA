@@ -1,0 +1,57 @@
+======================================================================
+שם הסוכן: עדכון מדיניות אלוקציה
+גרסת הסוכן: AllocationPolicyUpdateAgent@v6d79452e-70b0-44c9-838f-3a0a8f2410f7
+מזהה השיחה: d4abc937-3f98-4a12-a8cf-4fe382865280
+מזהה הלקוח: (השיחה לא נפתחה בהקשר לקוח)
+הקשר הפתיחה: (לא נשמר - שיחה ישנה או שיחה שנפתחה ללא הקשר)
+תאריך ושעת השיחה: 20/10/2026 16:20:19
+משתמש: נטלי קויפמן
+סטטוס השיחה: פעילה
+======================================================================
+
+### אינטראקציה 1
+
+שאלת המשתמש (20/10/2026 16:20:19):
+מזהי ה-scope של המדיניות לעבודה (העבר אותם כפרמטרים לכלי GetAllocationPolicy, בקריאה אחת בלבד):
+ConnectionID: 98a4c446-f6ec-4b46-9062-d72a72b02bf2
+ConnectionType: 3
+השנה הנוכחית: 2026
+
+--------------------------------------------------
+הרצה 1 מתוך 1 | ניסיון: 1
+--------------------------------------------------
+הגדרות ההרצה:
+Provider Snapshot:
+{
+  "ProviderID": 1 // OpenAI,
+  "ModelName": "gpt-5.5",
+  "Parameters": null
+}
+Execution Snapshot:
+{
+  "Temperature": 0.2,
+  "MaxTokens": 10000,
+  "MaxIterations": 70,
+  "MaxToolCalls": 60,
+  "MaxUserMessageLength": null,
+  "StreamingPolicy": 1 // TextOnly,
+  "MaxCostPerConversation": null,
+  "MaxCostPerDay": null,
+  "MaxCostPerUser": null,
+  "Timeout": "00:05:00",
+  "AllowedToolIDs": [
+    "Ofek.AIAssistantTools.GetAllocationPolicyTool",
+    "Ofek.AIAssistantTools.WebSearchTool"
+  ]
+}
+
+קריאות לכלים: אין
+
+זמן ההרצה: - (20/10/2026 16:20:19 - לא הסתיים)
+סטטוס: Running
+שגיאות: אין
+
+תשובת הסוכן:
+(אין תשובה)
+
+======================================================================

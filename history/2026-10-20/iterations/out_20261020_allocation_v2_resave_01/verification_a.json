@@ -1,0 +1,11 @@
+{
+  "backup": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\ישן\\גיבוי_20261020_שמירה_חוזרת_WebSearch_V2_01\\WebSearch (1) V2.xlsx",
+  "content_already_matched_approved_version": true,
+  "live_system_tested": false,
+  "policy_checked_unchanged": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\GetAllocationPolicy V2.xlsx",
+  "policy_sha256": "b33b00c061ac77f4c6ce3685905cefe586862e5c43cb2f0f655aeff6d70e5af5",
+  "protected_files_unchanged": 9,
+  "root_and_tool_directory_entries_unchanged": true,
+  "websearch_saved": "\\\\192.168.100.3\\data\\SharedFolders\\PLAN T\\PLANT NEW IDAN\\השקת גרסת ה AI\\סוכני AI- פרומפטים ונוסחי כלים (נטלי)\\פרומפטים סוכן וכלים- עדכון אחרון\\סוכן עדכון מדיניות אלוקציה\\קבצים בפורמט שהמערכת מקבלת\\WebSearch (1) V2.xlsx",
+  "websearch_sha256": "76d3e1c66671e39e5cfa9be28d141d66238878dbe53fc6f383d7def74901ff44"
+}

@@ -1,0 +1,68 @@
+{
+  "all_original_prompt_rules_byte_equivalent": true,
+  "all_ten_institutions_remain_permitted": true,
+  "call_budget_recovery_verification_rules_unchanged": true,
+  "case_count": 14,
+  "cases": [
+    {
+      "eligible": true,
+      "name": "supported_candidate"
+    },
+    {
+      "eligible": false,
+      "name": "outside_whitelist_LPL"
+    },
+    {
+      "eligible": false,
+      "name": "outside_whitelist_Neuberger"
+    },
+    {
+      "eligible": false,
+      "name": "outside_whitelist_Kempen"
+    },
+    {
+      "eligible": false,
+      "name": "inferred_month"
+    },
+    {
+      "eligible": false,
+      "name": "forecast_title_is_not_publication_year"
+    },
+    {
+      "eligible": false,
+      "name": "inferred_direction"
+    },
+    {
+      "eligible": false,
+      "name": "macro_only"
+    },
+    {
+      "eligible": false,
+      "name": "investor_behavior_is_not_recommendation"
+    },
+    {
+      "eligible": false,
+      "name": "homepage_only"
+    },
+    {
+      "eligible": false,
+      "name": "inferred_domain"
+    },
+    {
+      "eligible": false,
+      "name": "invented_document"
+    },
+    {
+      "eligible": false,
+      "name": "missing_evidence"
+    },
+    {
+      "eligible": false,
+      "name": "unsupported_document_type"
+    }
+  ],
+  "live_agent_tested": false,
+  "mode": "Static content and independent synthetic acceptance cases; no search-provider execution",
+  "original_document_types_remain_permitted": true,
+  "source_and_other_tool_cells_unchanged": true
+}

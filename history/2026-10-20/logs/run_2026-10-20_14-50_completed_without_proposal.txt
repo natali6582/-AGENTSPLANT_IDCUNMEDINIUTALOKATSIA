@@ -1,0 +1,625 @@
+======================================================================
+שם הסוכן: עדכון מדיניות אלוקציה
+גרסת הסוכן: AllocationPolicyUpdateAgent@v6d79452e-70b0-44c9-838f-3a0a8f2410f7
+מזהה השיחה: dbc3eae4-5cb4-47ff-80c0-dec6a3f57e69
+מזהה הלקוח: (השיחה לא נפתחה בהקשר לקוח)
+הקשר הפתיחה: (לא נשמר - שיחה ישנה או שיחה שנפתחה ללא הקשר)
+תאריך ושעת השיחה: 20/10/2026 14:50:18
+משתמש: נטלי קויפמן
+סטטוס השיחה: פעילה
+======================================================================
+
+### אינטראקציה 1
+
+שאלת המשתמש (20/10/2026 14:50:18):
+מזהי ה-scope של המדיניות לעבודה (העבר אותם כפרמטרים לכלי GetAllocationPolicy, בקריאה אחת בלבד):
+ConnectionID: 98a4c446-f6ec-4b46-9062-d72a72b02bf2
+ConnectionType: 3
+השנה הנוכחית: 2026
+
+--------------------------------------------------
+הרצה 1 מתוך 1 | ניסיון: 1
+--------------------------------------------------
+הגדרות ההרצה:
+Provider Snapshot:
+{
+  "ProviderID": 1 // OpenAI,
+  "ModelName": "gpt-5.5",
+  "Parameters": null
+}
+Execution Snapshot:
+{
+  "Temperature": 0.2,
+  "MaxTokens": 10000,
+  "MaxIterations": 70,
+  "MaxToolCalls": 60,
+  "MaxUserMessageLength": null,
+  "StreamingPolicy": 1 // TextOnly,
+  "MaxCostPerConversation": null,
+  "MaxCostPerDay": null,
+  "MaxCostPerUser": null,
+  "Timeout": "00:05:00",
+  "AllowedToolIDs": [
+    "Ofek.AIAssistantTools.GetAllocationPolicyTool",
+    "Ofek.AIAssistantTools.WebSearchTool"
+  ]
+}
+
+קריאה לכלי #1 (איטרציה 1)
+שם הכלי: GetAllocationPolicy
+פרמטרי הקלט:
+{
+  "ConnectionID": "98a4c446-f6ec-4b46-9062-d72a72b02bf2",
+  "ConnectionType": 3
+}
+הפלט שהתקבל:
+{
+  "Profiles": [
+    {
+      "ProfileCode": 1,
+      "ProfileName": "שמרן",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 45
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 20
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 15
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 0,
+          "Max": 10
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 0,
+          "Max": 20
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 60
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 5,
+          "Max": 15
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    },
+    {
+      "ProfileCode": 2,
+      "ProfileName": "סולידי",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 55
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 15
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 10
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 0,
+          "Max": 17
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 0,
+          "Max": 20
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 57
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 5,
+          "Max": 15
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    },
+    {
+      "ProfileCode": 3,
+      "ProfileName": "מאוזן",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 60
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 13
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 7
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 15,
+          "Max": 35
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 40
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 60
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 10,
+          "Max": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    },
+    {
+      "ProfileCode": 4,
+      "ProfileName": "אוהב סיכונים",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 70
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 15
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 10
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 5
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 20,
+          "Max": 50
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 40
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 65
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 10,
+          "Max": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    },
+    {
+      "ProfileCode": 5,
+      "ProfileName": "צמא לסיכון קיצוני",
+      "Allocation": [
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Value": 80
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Value": 10
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Value": 8
+        },
+        {
+          "Component": "cash",
+          "Name": "מזומנים",
+          "Value": 2
+        }
+      ],
+      "Exposures": [
+        {
+          "Component": "risk",
+          "Name": "חשיפה לסיכון",
+          "Min": 50,
+          "Max": 100
+        },
+        {
+          "Component": "abroad",
+          "Name": "חשיפה לחו\"ל",
+          "Min": 10,
+          "Max": 40
+        },
+        {
+          "Component": "fx",
+          "Name": "חשיפה למט\"ח",
+          "Min": 10,
+          "Max": 30
+        },
+        {
+          "Component": "cashExp",
+          "Name": "חשיפה למזומן",
+          "Min": 15,
+          "Max": 25
+        },
+        {
+          "Component": "cashHold",
+          "Name": "אחזקה במזומן",
+          "Min": 5,
+          "Max": 10
+        },
+        {
+          "Component": "equity",
+          "Name": "שוק ההון",
+          "Min": 35,
+          "Max": 75
+        },
+        {
+          "Component": "alternative",
+          "Name": "אלטרנטיבי",
+          "Min": 10,
+          "Max": 20
+        },
+        {
+          "Component": "realEstate",
+          "Name": "נדלן ללא מגורים",
+          "Min": 10,
+          "Max": 25
+        }
+      ]
+    }
+  ]
+}
+
+קריאה לכלי #2 (איטרציה 2)
+שם הכלי: WebSearch
+פרמטרי הקלט:
+{
+  "Query": "2026 official Capital Market Assumptions Investment Outlook Market Outlook Strategic Asset Allocation Asset Allocation Outlook House View CIO overweight underweight increase allocation reduce allocation from Goldman Sachs JPMorgan BlackRock Vanguard Morgan Stanley UBS Citi IMF World Bank OECD. Find up to six specific official publications from these institutions that may contain strategic asset allocation recommendations for broad asset classes: public equity, cash, alternatives, investment real estate. For each candidate provide only supported details among: institution, document, publicationDate month/year if stated, officialDomain, documentType, component, direction increase/decrease only if explicit, evidence sentence or 'explicit allocation recommendation not yet located'. Do not require all details to be verified at discovery; mark unknown as not verified. Exclude news, marketing, personal finance, single-security/product recommendations, capital actions, dividends, buybacks, CCAR, company financials, videos/social media, tactical-only or macro-only items if already clear."
+}
+הפלט שהתקבל:
+(ריק)
+
+קריאה לכלי #3 (איטרציה 3)
+שם הכלי: WebSearch
+פרמטרי הקלט:
+{
+  "Query": "2026 official site publications by Goldman Sachs Asset Management, J.P. Morgan Asset Management LTCMA, BlackRock Investment Institute, Vanguard, Morgan Stanley, UBS CIO House View, Citi Private Bank, IMF, World Bank, OECD: Strategic Asset Allocation, Capital Market Assumptions, Asset Allocation Outlook, Market Outlook, Investment Outlook, CIO outlook; terms portfolio allocation, overweight, underweight, increase allocation, reduce allocation, equities, cash, alternatives, real estate. Return up to six identified official publications as candidates even if month/type/direction still need verification. For each candidate list supported details only: institution, document title, publication month/year if stated in the official publication, official domain, document type, broad component and explicit increase/decrease recommendation if found, short evidence or 'not verified'. Do not include items already clearly non-official, news, education/personal finance, single security/product, company capital actions, macro forecast without portfolio allocation, tactical-only if clear."
+}
+הפלט שהתקבל:
+Here are six identified official publications from 2026 that discuss strategic asset allocation and market outlooks:
+
+1.  **Institution:** Vanguard
+    **Document Title:** 2026 Economic and Market Outlook: AI exuberance: Economic upside, stock market downside
+    **Publication Month/Year:** December 2025 (published in anticipation of 2026)
+    **Official Domain:** vanguard.com
+    **Document Type:** Outlook Report
+    **Broad Component:** Strategic Asset Allocation, Market Outlook, Investment Outlook
+    **Explicit Increase/Decrease Recommendation:** "In contrast, bonds remain attractive, underpinning our VEMO portfolio allocation of 40% stocks and 60% bonds."
+    **Short Evidence:** The report outlines Vanguard's updated long-term investment thesis and provides an economic roadmap for investors, discussing the impact of AI on markets. It also suggests a portfolio allocation of 40% stocks and 60% bonds.
+
+2.  **Institution:** J.P. Morgan Asset Management
+    **Document Title:** 2026 Long-Term Capital Market Assumptions
+    **Publication Month/Year:** October 2025 (published in anticipation of 2026)
+    **Official Domain:** jpmorgan.com
+    **Document Type:** Capital Market Assumptions Report
+    **Broad Component:** Capital Market Assumptions, Strategic Asset Allocation
+    **Explicit Increase/Decrease Recommendation:** "The report spotlights the opportunities to boost diversification through global equities and alternatives, particularly real assets. For investors embracing a 60/40+ portfolio, with 30% in diversified alternatives, the projected return jumps to 6.9% and the Sharpe ratio gets a 25% lift over the simple 60/40 approach."
+    **Short Evidence:** This report provides a 10-15 year outlook for returns and risks across asset classes, discussing the impact of economic nationalism and AI. It suggests opportunities to enhance diversification through global equities and alternatives.
+
+3.  **Institution:** BlackRock Investment Institute
+    **Document Title:** Q4 2026 Investment Outlook (mentioned within broader "Investment Outlooks & Market Research")
+    **Publication Month/Year:** Q4 2026 (specific month not detailed in snippet, but implies Q4 publication)
+    **Official Domain:** blackrock.com
+    **Document Type:** Investment Outlook Report
+    **Broad Component:** Investment Outlook, Strategic Asset Allocation
+    **Explicit Increase/Decrease Recommendation:** "We stay overweight U.S. equities and focus on opportunities driven by bottlenecks to participate in AI growth: power, grids, memory, chips, data centers."
+    **Short Evidence:** This outlook covers AI, higher yields, inflation, and investment opportunities shaping global markets. A related document, "Fall 2026 Investment Directions," discusses AI volatility, rates, and diversified portfolios.
+
+4.  **Institution:** Morgan Stanley
+    **Document Title:** Investment Outlook 2026: Key Themes Shaping Global Markets
+    **Publication Month/Year:** January 2026
+    **Official Domain:** morganstanley.com
+    **Document Type:** Investment Outlook Report
+    **Broad Component:** Investment Outlook, Market Outlook
+    **Explicit Increase/Decrease Recommendation:** Not explicitly detailed in the snippet.
+    **Short Evidence:** This publication explores themes shaping global markets in 2026, including AI, energy, geopolitics, and demographic shifts.
+
+5.  **Institution:** Citi Private Bank
+    **Document Title:** 2026 GLOBAL FAMILY OFFICE REPORT (includes asset allocation details)
+    **Publication Month/Year:** 2026 (specific month not detailed in snippet)
+    **Official Domain:** citi.com
+    **Document Type:** Report
+    **Broad Component:** Strategic Asset Allocation, Portfolio Allocation
+    **Explicit Increase/Decrease Recommendation:** "The most notable reductions occurred in direct real estate and private-equity funds, while investments in cash and fixed income changed modestly. Allocations to direct private equity remained unchanged."
+    **Short Evidence:** The report indicates that family offices are maintaining balanced portfolios with public equities as the preferred destination, complemented by private markets, real assets, and defensive holdings. Reductions were noted in direct real estate and private-equity funds.
+
+6.  **Institution:** OECD
+    **Document Title:** OECD Economic Outlook, Interim Report September 2026
+    **Publication Month/Year:** September 2026
+    **Official Domain:** oecd.org
+    **Document Type:** Economic Outlook Report (Interim)
+    **Broad Component:** Market Outlook, Strategic Asset Allocation (implied through economic conditions affecting markets)
+    **Explicit Increase/Decrease Recommendation:** Not explicitly detailed in the snippet.
+    **Short Evidence:** This report provides an update on global economic trends and prospects, noting resilient but moderated growth influenced by AI and geopolitical factors. It discusses risks and policy recommendations.
+
+מקורות:
+1. vanguard.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqR1tD4gnIQCNc0MwppOsjM1OufkHRENHAnEK-GiAVGiFrZ6aHhCCmSygTyiNcIQnG54UJ69H9ZjImWNcE-qmM8DPzO5qNUx1y6ReuFSFYQgrh8yJXTH5ffDxAMO1f2iiXfVyrXxzpcPOV_o3oHD-fr53s8bYTsfPpDYLbk-EpnH5USoiJI70QFBc4vqtIGx0KVrImLoEwyzoluKmWvOAXfmu3ekUB4pCaiRFb8ggNsRNcdOOr8dw=
+2. prnewswire.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOsL7hZFZm5ESoKoJaAvAAwH8miNvB2C2_rtXeniwLL5i5MHrWJla_vi3EASuV0MXYqtSj0IqNwCd4wPQOj-oMdd2YgP7iTVQ_T3NUBqRyhys6FGe8uJwPBZnk0AcofsuPYaPMrF5PUNmrRy_J2wylMUERKZNQeKc0nIiU4L9KlOosgFI7OU6H-e6Bm0Aze61qwXXhb9if1Kg8WEkRBQ4LF-Yz7zo=
+3. jpmorgan.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXx2YDn2nDWHbsVwlA1vuNx9kRQHKwTd_9tYaIFfhPWIgVhYsdVaT2RvGq1HFOJ6nA9CYF20RhxqRXyIDk3H5XXUxlW_cjFMCDry2bUqsjsOxQGDRMUOV0tdDYfXAs9yzwCqvBajf7JqUH4kxnEdvuPr4WStTtos4xUDcL1AUx1_CPO2ReHgYiK5WOCUr7wqJVQ8Fw-h4z4Wou_ZKeZZJ1AqbUXQWiiMzRDiQxR5u1OuVtFtLmp30KoO9iqBc5LHtQwYQFhrInKCmF
+4. jpmorgan.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzKat3QoP-J0bzfZ_OXMiiWh7AC97vGLIkG3Od8xfJAUDbqyFKjaWk7TF0qa8j4uDkvs44q9s_XPcZG1S0q3Lz4_SNt270oN3Vpg0em65N9j7YzySG0eL5z_4KZtO78vdSD6dhUsfhdmp5bJ0_bJRbFZoAzXhD5kn3GYrlLg==
+5. blackrock.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMT-xvdc50svs_O2FP1gV3eXtneT5L8wqbQmFkVjcYdBNOhlzyECM8PXPvHQg4AIhnzM3cgMgc_yKM-FqY2nsqRdeUpgoPT4x7P_KyFzPCBCf2QlE-zmrW0U36h1w6RqwBzwhXRyc3qybfm9QYhW71BqkKLYPEwpSdaNyKI_3VCPoSGzFK22t6nooJtVqJh2u244nESaDK91xoB4L4P2w8TncJ
+6. blackrock.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdCn_4YfW_ojyoR3VesOZtz2B_WF2lFOsBRJ1FOr0iPk37_w40jk5ciZ6oJJ3vpWGVyd2SZxAqDB0ZU0hK3pYN61DO8dzAmptLILUuwLWoh7IByjiZueP1TERm4Y30MxagD5ixbKo3VUjsT2RyORRHudqJUAS9O-20-UndbvAQVDH9KelH_pz9SLQ=
+7. blackrock.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFilt77iRL99-TlucvAdcgfHWyv8z4MDnub1ZEg72oTJPy9_GlHv2QcqFwgx-rz1F0zM5NgtOjiWE65f6-dXGL0POR33e7JtjYu_hqpB8iYPNugfoz4o5_ZFOikI3GZvcLrAGWdPW7cBCRz6dJX7nR-Q5hkxuhJCVDaYMLXp-jmEQhBRAE0PLCYCT3UDn0t
+8. morganstanley.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJk5g65XA9fEjRj0OEuIExRTIp64dMVFj5NsnWnWFsq5cJT3kA25CbaZP70cHa2AFtPxZduTx6t1ilvFDyrggPTzsUY9l6siRFC0TRNKdDHs9xqL5rb-6MixXXAyOyHn2erP7J1ie82AVeCEWXx_sG2hS09wC9_1dKMtYlVUs1cdh56a9DW92Bb9NN--hNvvFrDw==
+9. citibank.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE496-1vv34-4Oz-3AWcE-A3dbUjyB0ZJXijxeuHsq3Vq1oIVNJ-MJxGT5jHNZ8YVFw074BNQk6Hs-MS8y71Fpu2A05dM_CLadUEXawaz69Ak4PKBiR1ywGaQ8AjGE0DICJOIgZUyFL7ETaebHqC31uYdegEmWYbrjMVUIjUL58l9WrarhREAJw_XCgyyXpVK2iUKDBS0o=
+10. oecd.org | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf7IybVORFdJSWIA8IFdOdP9rMMVOKPXXyNfDKVvhdJe7mnrXC3lTHl40uy7mL3IuaUs0KOCUEBPGdidLV0W2Lkv7Pr-Ympp8gO2qTjtlPNWYck8ONEfzYMplBpilqDeed5O9t9C2Jl1OLU45X1Ql538IJSw88b5nJIjDNd2u9k8IQsOu6wXGRLR0B_jKlBNB86cm_osxN72iHWFgEm50masTfA7OSf69_
+11. oecd.org | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG12Hydi0cuzjNrYkBEVvPWEumS3oPEgt3OFN02LKlqbmyQI-uN9uEoBcvrXMdqLUiC7uSa3q7X5f1DyS2bUUsQk6TqcFyJedqgCNl-xR1wppyhrW7WtzKD8a6fnVVhHaKyGrfJh9fqfT9S8sv7YwcSZVnzkQpaqtwrNwBxWm9giqdAQcvpi5jQyw9qQpRn96LlOewi1ZIyxXGecAKu1o7LDPuyZQOlCyTizQEupU3LQm0VRs14
+12. oecd.org | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVArFJ-562EbZXW842cL0HBY9C49x4DSpDi7xTbzl1CnPwckGq5ZYgi-ZBXmnYrqJGd66SINkH32-da1p2LNm7WIHslhrqrOMEOKSMEOLIFeh-vKCdL8AD0TpGnftICgF-qnCz6t9Ze72HzE38qJERgXuoibQ8Nh2vDw==
+
+קריאה לכלי #4 (איטרציה 4)
+שם הכלי: WebSearch
+פרמטרי הקלט:
+{
+  "Query": "Verification only for this CandidateList, do not add or replace candidates. Check neutrally whether each specific publication exists on the official site of the named institution, the actual publication month and year in 2026, whether its document type is one of Capital Market Assumptions, Investment Outlook, Market Outlook, Strategic Asset Allocation, Asset Allocation Outlook, House View or equivalent CIO research, and whether it contains an explicit strategic asset allocation recommendation to increase/decrease or overweight/underweight a broad asset class matching public equity, strategic cash, alternatives, or investment real estate. Also check conflicting evidence. Acceptance requires actual publication in 2026 with month supported by the official publication/details, official domain, permitted document type, explicit allocation direction, and component mapping. Candidates: 1) BlackRock Investment Institute, document: \"Q4 2026 Investment Outlook\" or related official Investment Outlooks & Market Research/Fall 2026 Investment Directions, publicationDate: Q4 2026 month not verified, officialDomain blackrock.com, documentType Investment Outlook, component possibly public equity, direction possibly increase/overweight, evidence claim to verify: \"We stay overweight U.S. equities and focus on opportunities driven by bottlenecks to participate in AI growth: power, grids, memory, chips, data centers.\" Sources from discovery included blackrock.com links. 2) Morgan Stanley, document: \"Investment Outlook 2026: Key Themes Shaping Global Markets\", publicationDate January 2026, officialDomain morganstanley.com, documentType Investment Outlook, component/direction not verified, evidence: explicit allocation recommendation not yet located. 3) Citi Private Bank, document: \"2026 Global Family Office Report\", publicationDate 2026 month not verified, officialDomain citi.com or privatebank.citibank.com, documentType report, component possibly real estate/alternatives/cash, direction possibly decrease for direct real estate/private equity funds from reported allocations, evidence to verify whether this is an explicit strategic allocation recommendation or only survey/allocation reporting. Return only accepted documents with supported institution, document, publicationDate month/year, officialDomain, documentType, component, direction increase/decrease, evidence sentence; and separately identify rejected candidates and unresolved verification gaps."
+}
+הפלט שהתקבל:
+**Accepted Candidates:**
+
+*   **Morgan Stanley:**
+    *   **Document:** "Investment Outlook 2026: Key Themes Shaping Global Markets"
+    *   **Publication Date:** January 2026
+    *   **Official Domain:** morganstanley.com
+    *   **Document Type:** Investment Outlook
+    *   **Component:** Public equity (implied by "shaping global markets" and the general nature of an investment outlook)
+    *   **Direction:** Not explicitly stated in the provided snippets.
+    *   **Evidence:** The document is an "Investment Outlook 2026: Key Themes Shaping Global Markets" published in January 2026 on morganstanley.com.
+
+*   **Citi Private Bank:**
+    *   **Document:** "2026 Global Family Office Report"
+    *   **Publication Date:** September 22, 2026 (based on the article announcing the report's release)
+    *   **Official Domain:** citi.com
+    *   **Document Type:** Report
+    *   **Component:** Public equity, alternatives, investment real estate (implied by "public equities re-emerging as a primary destination for new capital," "private markets remain a core portfolio pillar," and "allocations to direct real estate/private equity funds")
+    *   **Direction:** Increase for public equity (implied by "public equities re-emerging as a primary destination for new capital") and potential decrease for direct real estate/private equity funds (implied by "investing with confidence -- becoming more institutional in how they invest, more sophisticated in how they manage risk, and more intentional in how they prepare for the future," and commentary on shifting towards public equities).
+    *   **Evidence:** Citi Wealth's 2026 Global Family Office Report was released on September 22, 2026, and it indicates a shift towards public equities as a primary destination for new capital, while private markets remain a core pillar.
+
+**Rejected Candidates:**
+
+*   **BlackRock Investment Institute:** The specific document "Q4 2026 Investment Outlook" or "Fall 2026 Investment Directions" with the stated evidence was not found. While BlackRock published "Q4 2026 Investment Outlook" on October 6, 2026, and "Fall 2026 Investment Directions" on September 1, 2026, the provided evidence ("We stay overweight U.S. equities and focus on opportunities driven by bottlenecks to participate in AI growth: power, grids, memory, chips, data centers.") was not directly verifiable within the search results for these specific documents.
+
+**Unresolved Verification Gaps:**
+
+*   **Morgan Stanley:** While the document and publication date are verified, the explicit strategic asset allocation recommendation to increase/decrease or overweight/underweight a broad asset class was not found in the provided snippets.
+*   **BlackRock Investment Institute:** The specific evidence claim regarding overweighting U.S. equities and other components was not directly verifiable in the search results for the identified publications.
+*   **Citi Private Bank:** While the report indicates shifts in allocation strategies, the explicit mention of "increase/decrease or overweight/underweight" for specific broad asset classes as a direct strategic recommendation requires further verification within the full report. The current snippets suggest a shift rather than an explicit directional recommendation.
+
+מקורות:
+1. morganstanley.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-iSdZOY258hjC2zgsRwDr1cSFjYp5kXuiPV084XP98x0wbapMPcpwqXxtvJSm7tMibg5E_OBbNA0azIBjpBH9bnh0QW92fhEfx_R_yd16R6j3YURurhbKkbno1DeSfcBsd_UxHAEYflSl7NyQ_7yTme1clNvnlG78YwE7Ek--GkvumLAidkdwAiwMmLOEEjEx
+2. youtube.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFesgZpBsM9_t3l3QwR8IOW1OrcFVepeLpX6gkgCkzOovfhEEg58CobE6oCvNj0lF5WNROGGYQEA0voLhqOZ1_ZPwT0a13GJGFSSMWj2W4PpHWsseWsHQ0svapIIz7yRDJX-G6tcg==
+3. youtube.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_cehPOmr3cEFmTkOArSOrwNB6Fa2BZ5JwxQniriksGbXPJsWnaLDf0AUOeaTl1JrS8n5TcK85luLfhrumiLvjQU3jh0-QeI3QSVuVb_RAu1zqiOjv85JHHFaJgLTQ2Xv0w84EmNlXgV3ssVcX_aOOqXTAuFTeFjK2emvFk_6twE-bpls=
+4. facebook.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYt2-GMwRXxE7tqDWqV7Qex-uoQRrRR_NxCiylJdQIOpM9q-ZLqC9kCo8O_PRP2K9e479qkW6qGKH_oGvZ3994khEFFJQfFPq_QcaH-XeXndPvaDqOhywONBxM2YRCdMd7mwIpIwr53oATZrzO-42MrqUXA1nPG9Ak1gAw89Wv8pTQZYUlGv3jG7XpT2jeYrLMFDaZaDSHo_eNXw7pq0tfHsK5EZJFaq5x3d9WlCiUxlprQOBFuswz3mu9tVEe6TzlvaJDVKy-5w==
+5. citigroup.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEal6ExQoex55kG2D2czxCVQTEAGYCwwXlZzpK62Z3mpNxzRbWsjCDJ4HckyCSzLeHW36-8q8xtfVQaOr4JfrncUBD3LZVK0a-oLNYQeL4edd3HDQpmG9y0fdyXMdciscaFckuRwTBHM8fYPkRkmlkCKKKmUATSq5AgfFxYekqje7pcpl-Si6DDNolB00zx75NrzwDpmt-irBST42Cg_GdApjEt4ZX-07cHz0m_7jQzh-ySt_QAxMN7i52BUDwg4bqfzeurqo_s2X0W2DSq1Dm6R-xrTHFu_PpURUiyogmSHUzxkH3-EXckk8ScdGc=
+6. blackrock.com | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOjMiGlgUG_CnzFh8OkBAQYdTnbsNQuE2a8bQZG6PeqVdX8kKJ2XYuZwe2TSYKc_VtiYFznKkxCaiaBN3Oxwv3Os6LllCjhyFZqf1b9ghUDWlk_LZxcfZCNjV5rl1Hgror9GlEZxYp0H1LlJoCz1Tyt8wzhsW-vN2ja-dnAJDAcxITXUEbCxpDKA==
+
+זמן ההרצה: 72.9 שניות (20/10/2026 14:50:18 - 20/10/2026 14:51:31)
+סטטוס: Completed
+שגיאות: אין
+
+תשובת הסוכן:
+(20/10/2026 14:51:31)
+הבחינה **טרם ניתנת להשלמה**, ולכן אין לחשב או להציג הצעת שינוי למדיניות בשלב זה.
+
+## נתוני המדיניות הקיימת
+
+מבנה המדיניות שהתקבל תקין מבחינת היקף בסיסי: קיימים חמישה פרופילי סיכון, ולכל פרופיל ארבעת רכיבי האלוקציה הנדרשים שסכומם 100%.
+
+עם זאת, נמצאו חריגות קיימות ביחס לגבולות החישוב של המדיניות:
+
+| פרופיל | רכיב | ערך קיים במדיניות | גבולות החישוב |
+|---|---:|---:|---:|
+| שמרן | אלטרנטיבי | 20% | 5%–15% |
+| סולידי | אלטרנטיבי | 20% | 5%–15% |
+| סולידי | מזומנים | 10% | 15%–25% |
+| מאוזן | מזומנים | 7% | 15%–25% |
+| אוהב סיכונים | שוק ההון | 70% | 35%–65% |
+| אוהב סיכונים | מזומנים | 5% | 15%–25% |
+| צמא לסיכון קיצוני | שוק ההון | 80% | 35%–75% |
+| צמא לסיכון קיצוני | נדלן ללא מגורים | 8% | 10%–25% |
+| צמא לסיכון קיצוני | מזומנים | 2% | 15%–25% |
+
+חריגות קיימות אינן כשלעצמן עילה לשינוי; שינוי מחייב בסיס מחקרי מאומת לפי כללי הבחינה.
+
+## מצב המחקר לשנת 2026
+
+בוצע איתור מחקרי לשנת 2026 מול המוסדות המותרים, ולאחר איתור חוזר נמצאו מועמדים לבדיקה. בוצע גם שלב אימות למועמדים שנשארו.
+
+### מועמדים שנבדקו
+
+| מוסד | פרסום | מצב |
+|---|---|---|
+| BlackRock Investment Institute | פרסום Investment Outlook / Investment Directions לשנת 2026 | נפסל כמקור להצעה: ההמלצה הנטענת על משקל יתר במניות לא אומתה עבור הפרסום המסוים |
+| Morgan Stanley | Investment Outlook 2026: Key Themes Shaping Global Markets | הפרסום והמועד אותרו, אך לא אומתה המלצת הקצאה אסטרטגית מפורשת לרכיב רלוונטי |
+| Citi Private Bank | 2026 Global Family Office Report | נמצא פרסום רשמי מספטמבר 2026, אך לא אומתה המלצת הקצאה אסטרטגית מפורשת; המידע שנמצא נראה כדיווח/סקר על הקצאות ולא כהמלצת מדיניות |
+
+## מדוע אין הצעת שינוי כעת
+
+לא התקבלו לפחות שני מוסדות שונים עם המלצה מאומתת באותו כיוון לאותו רכיב, כנדרש לקביעת כיוון שוק.
+
+בנוסף, לגבי חלק מהמועמדים נותר פער אימות מהותי: לא הושלמה הוכחה מספקת לכך שקיימת המלצת הקצאה אסטרטגית מפורשת, להגדלה או הקטנה, עבור אחד מהרכיבים במדיניות.
+
+מאחר שמסלול ההתאוששות המחקרי כבר נוצל במסגרת האיתור החוזר, ולא ניתן לבצע השלמת אימות נוספת במסגרת מגבלת המחקר, הבחינה נותרת **לא שלמה** ולא ניתן לחשב חבילת שינוי תקפה.
+
+## סיכום
+
+אין בשלב זה הצעת שינוי לאישור.  
+הסיבה אינה שהוכח שאין צורך בשינוי, אלא שהמחקר המאומת לשנת 2026 לא מספק בסיס מלא לקביעת כיווני שוק ולחישוב הצעה לפי כללי המדיניות.
+
+======================================================================

@@ -1,0 +1,36 @@
+[
+  {
+    "file": "פרומפט עדכון 12_57 20_10.txt",
+    "sha256": "2dde76aafc2a0caab3fa055965f96b1a12eb57a422fc052c2de66f4c5c51e393",
+    "changed_sections": [
+      "שימוש במידע קיים",
+      "סדר העבודה ותנאי המשך"
+    ],
+    "workflow_items_changed": [
+      2,
+      6
+    ]
+  },
+  {
+    "file": "GetAllocationPolicy V2.xlsx",
+    "sha256": "acd66c5f9bf109fe7f4edc8199289afea4dfdeef3ce85419dc19a3bb5112bfd9",
+    "changed_cells": [],
+    "sheet_count": 60,
+    "byte_identical_to_source": true
+  },
+  {
+    "file": "WebSearch (1) V2.xlsx",
+    "sha256": "3f7e7ae48bfabe1401518e5096532464afcf54a20662fc1d5655e5d0732fd93e",
+    "changed_cells": [
+      [
+        "מידע כללי",
+        "F2"
+      ]
+    ],
+    "sheet_count": 60,
+    "changed_package_parts": [
+      "xl/sharedStrings.xml"
+    ],
+    "non_target_cells_and_properties_unchanged": true
+  }
+]

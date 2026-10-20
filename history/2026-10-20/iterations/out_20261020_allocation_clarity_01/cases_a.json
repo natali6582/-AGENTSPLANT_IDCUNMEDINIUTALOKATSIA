@@ -1,0 +1,68 @@
+{
+  "case_count": 14,
+  "cases": [
+    {
+      "name": "empty_discovery_requires_retry_and_verification",
+      "result": "recovery_required"
+    },
+    {
+      "name": "verification_gap_requires_recovery",
+      "result": "recovery_required"
+    },
+    {
+      "name": "one_slot_cannot_recover_discovery",
+      "result": "insufficient_budget"
+    },
+    {
+      "name": "no_fourth_call",
+      "result": "insufficient_budget"
+    },
+    {
+      "name": "shared_recovery_cannot_be_reused",
+      "result": "recovery_already_used"
+    },
+    {
+      "name": "unknown_count_is_not_zero",
+      "result": "no_calls_unknown_state"
+    },
+    {
+      "name": "unknown_recovery_is_not_unused",
+      "result": "no_calls_unknown_state"
+    },
+    {
+      "name": "unknown_stage_blocks_new_calls",
+      "result": "no_calls_unknown_state"
+    },
+    {
+      "name": "unlinked_results_block_new_calls",
+      "result": "no_calls_unknown_state"
+    },
+    {
+      "name": "conflicting_counter_blocks_new_calls",
+      "result": "no_calls_unknown_state"
+    },
+    {
+      "name": "valid_empty_list_does_not_trigger_recovery",
+      "result": "no_recovery_trigger"
+    },
+    {
+      "name": "supported_rejection_does_not_trigger_recovery",
+      "result": "no_recovery_trigger"
+    },
+    {
+      "name": "low_support_does_not_trigger_recovery",
+      "result": "no_recovery_trigger"
+    },
+    {
+      "name": "explicit_failure_does_not_add_retry",
+      "result": "no_recovery_trigger"
+    }
+  ],
+  "live_agent_tested": false,
+  "research_acceptance_and_allocation_algorithm_unchanged": true,
+  "scope": "Static wording, package checks, and independent reference cases; no live agent execution",
+  "workflow_items_changed": [
+    2,
+    6
+  ]
+}
